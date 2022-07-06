@@ -1,0 +1,492 @@
+.css_06_boxe_peso3 {
+  margin-top: 32px;
+
+  .css_06_boxe_peso3_secao_titulo {
+    background-color: $apoio_cor1;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+
+    .css_06_boxe_peso3_titulo {
+      margin: 0;
+      font-family: $fontName;
+      font-size: 21px;
+      font-weight: 600;
+      font-style: normal;
+      color: #fff;
+      background-color: #f5f5f5;
+      width: fit-content;
+      padding: 16px 42px;
+      border-radius: 0 40px 40px 0;
+    }
+
+  }
+
+  .css_06_boxe_peso3_secao {
+    border: solid 4px $apoio_cor1;
+    border-radius: 0px 0px 15px 15px;
+    min-height: 100px;
+  }
+
+  &.artes {
+    &.modelo_01 {
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: white;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $apoio_cor1;
+
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $apoio_cor1;
+        padding: 42px;
+        border-radius: 0px 15px 15px 15px;
+      }
+    }
+
+    &.modelo_02 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          border-radius: 50px;
+          background-color: $art_cor1;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        padding: 54px 42px 42px 42px;
+        border: solid 4px $art_cor1;
+        border-radius: 0px 15px 0px 0px;
+      }
+    }
+
+    &.modelo_03 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $art_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $art_cor2;
+        padding: 54px 42px 42px 42px;
+      }
+    }
+  }
+
+  &.historia {
+    &.modelo_01 {
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: white;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $apoio_cor1;
+
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $apoio_cor1;
+        border-radius: 0px 15px 15px 15px;
+        padding: 42px;
+      }
+    }
+
+    &.modelo_02 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $his_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $his_cor1;
+        border-radius: 0px 15px 0px 0px;
+        padding: 54px 42px 42px 42px;
+      }
+    }
+
+    &.modelo_03 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $his_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        padding: 54px 42px 42px 42px;
+        border: solid 4px $his_cor2;
+      }
+    }
+  }
+
+  &.geografia {
+    &.modelo_01 {
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: white;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $apoio_cor1;
+
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $apoio_cor1;
+        border-radius: 0px 15px 15px 15px;
+        padding: 42px;
+      }
+    }
+
+    &.modelo_02 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $geo_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $geo_cor1;
+        border-radius: 0px 15px 0px 0px;
+        padding: 54px 42px 42px 42px;
+      }
+    }
+
+    &.modelo_03 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $geo_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        padding: 54px 42px 42px 42px;
+        border: solid 4px $geo_cor2;
+      }
+    }
+  }
+
+  &.ciencias {
+    &.modelo_01 {
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: white;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $apoio_cor1;
+
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $apoio_cor1;
+        border-radius: 0px 15px 15px 15px;
+        padding: 42px;
+      }
+    }
+
+    &.modelo_02 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $cie_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $cie_cor1;
+        border-radius: 0px 15px 0px 0px;
+        padding: 54px 42px 42px 42px;
+      }
+    }
+
+    &.modelo_03 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $cie_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $cie_cor2;
+        padding: 54px 42px 42px 42px;
+      }
+    }
+  }
+
+  &.lingua_portuguesa {
+    &.modelo_01 {
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: white;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $apoio_cor1;
+
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $apoio_cor1;
+        border-radius: 0px 15px 15px 15px;
+        padding: 42px;
+      }
+    }
+
+    &.modelo_02 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $por_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $por_cor1;
+        border-radius: 0px 15px 0px 0px;
+        padding: 54px 42px 42px 42px;
+      }
+    }
+
+    &.modelo_03 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $por_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        padding: 54px 42px 42px 42px;
+        border: solid 4px $por_cor2;
+      }
+    }
+  }
+
+  &.lingua_inglesa {
+    &.modelo_01 {
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: white;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $apoio_cor1;
+
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $apoio_cor1;
+        border-radius: 0px 15px 15px 15px;
+        padding: 42px;
+      }
+    }
+
+    &.modelo_02 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $ing_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $ing_cor1;
+        border-radius: 0px 15px 0px 0px;
+        padding: 54px 42px 42px 42px;
+      }
+    }
+
+    &.modelo_03 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $ing_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $ing_cor2;
+        padding: 54px 42px 42px 42px;
+      }
+    }
+  }
+
+  &.matematica {
+    &.modelo_01 {
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: white;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $apoio_cor1;
+
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $apoio_cor1;
+        border-radius: 0px 15px 15px 15px;
+        padding: 42px;
+      }
+    }
+
+    &.modelo_02 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $mat_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        border: solid 4px $mat_cor1;
+        border-radius: 0px 15px 0px 0px;
+        padding: 54px 42px 42px 42px;
+      }
+    }
+
+    &.modelo_03 {
+      margin-top: 0px;
+
+      .css_06_boxe_peso3_secao_titulo {
+        background-color: transparent;
+        overflow: visible;
+        position: relative;
+        border-radius: 50px;
+        top: 30px;
+        z-index: 1;
+
+        .css_06_boxe_peso3_titulo {
+          background-color: $mat_cor1;
+          border-radius: 50px;
+        }
+      }
+
+      .css_06_boxe_peso3_secao {
+        padding: 54px 42px 42px 42px;
+        border: solid 4px $mat_cor2;
+      }
+    }
+  }
+
+
+}

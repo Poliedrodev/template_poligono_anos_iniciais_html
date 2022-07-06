@@ -1,11 +1,9 @@
 .css_05_fonte {
-  display: block;
+  font-family: $fontName;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
   text-align: right;
-  font-size: 14px;
-  color: #000000;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 68px 0px 108px;
+  margin-left: 20%;
+  color: #666666;
 }
-

@@ -1,0 +1,60 @@
+.css_03_2exercicio_alternativa_item {
+  margin-top: 16px;
+  font-family: $fontName;
+  font-weight: 300;
+  color: $textColor;
+  line-height: 1.5em;
+  font-size: $fontName;
+  align-items: baseline;
+  list-style: none;
+  position: relative;
+
+  &::before {
+    font-family: $fontName;
+    font-size: $fontName;
+    font-weight: 600;
+    counter-increment: list;
+    content: counter(list, lower-alpha) ")";
+    position: absolute;
+    left: -30px;
+  }
+
+
+
+}
+
+.matematica {
+  .css_03_2exercicio_alternativa_item::before {
+    color: $mat_cor2;
+  }
+}
+
+.lingua_inglesa {
+  .css_03_2exercicio_alternativa_item::before {
+    color: $ing_cor2;
+  }
+}
+
+.lingua_portuguesa {
+  .css_03_2exercicio_alternativa_item::before {
+    color: $por_cor2;
+  }
+}
+
+.historia {
+  .css_03_2exercicio_alternativa_item::before {
+    color: $his_cor2;
+  }
+}
+
+.geografia {
+  .css_03_2exercicio_alternativa_item::before {
+    color: $geo_cor2;
+  }
+}
+
+.artes {
+  .css_03_2exercicio_alternativa_item::before {
+    color: $art_cor2;
+  }
+}

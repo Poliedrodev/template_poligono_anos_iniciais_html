@@ -1,0 +1,74 @@
+.body-book {
+  &.artes {
+    background-color: $art_cor2;
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Artes.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: fit-content;
+  }
+
+  &.ciencias {
+    background-color: $cie_cor2;
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Ciencias.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: fit-content;
+
+  }
+
+  &.matematica {
+    background-color: $mat_cor2;
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Matematica.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: fit-content;
+
+  }
+
+  &.geografia {
+    background-color: $geo_cor2;
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Geografia.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: fit-content;
+  }
+
+  &.historia {
+    background-color: $his_cor2;
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Historia.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: fit-content;
+  }
+
+  &.lingua_inglesa {
+    background-color: $ing_cor2;
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Ingles.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: fit-content;
+  }
+
+  &.lingua_portuguesa {
+    background-color: $por_cor2;
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Portugues.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: fit-content;
+  }
+
+}

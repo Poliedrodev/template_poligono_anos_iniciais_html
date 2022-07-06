@@ -12,10 +12,11 @@ $textColor: #000000;
 
 /* Variações de cores */
 /* Artes */
-$art_cor1: #64428C;
-$art_cor2: #3F1F71;
+$art_cor1: #7961AA;
+$art_cor2: #00B07D;
 $art_cor3: #B9A9CB;
 $art_cor4: #dfdaea;
+$art_bg: #D7D0E6;
 
 /* Biologia */
 $bio_cor1: #45973D;
@@ -24,10 +25,11 @@ $bio_cor3: #ABD0A7;
 $bio_cor4: #E3F0E2;
 
 /* Ciências */
-$cie_cor1: #45973D;
-$cie_cor2: #306E2B;
+$cie_cor1: #39B54A;
+$cie_cor2: #CF3D96;
 $cie_cor3: #ABD0A7;
 $cie_cor4: #E3F0E2;
+$cie_bg: #C4E9C9;
 
 /* Educação Física */
 $edf_cor1: #64428C;
@@ -48,10 +50,11 @@ $fis_cor3: #8CCDD2;
 $fis_cor4: #D9EEF0;
 
 /* Geografia */
-$geo_cor1: #D85509;
-$geo_cor2: #9E2705;
+$geo_cor1: #F37021;
+$geo_cor2: #00B4C5;
 $geo_cor3: #EDB290;
 $geo_cor4: #F9E5DA;
+$geo_bg: #FCD5BD;
 
 /* Gramática */
 $gra_cor1: #c9252c;
@@ -60,10 +63,11 @@ $gra_cor3: #E59798;
 $gra_cor4: #f7dedf;
 
 /* História */
-$his_cor1: #951B81;
-$his_cor2: #6A0F5A;
+$his_cor1: #913493;
+$his_cor2: #00ACC0;
 $his_cor3: #CF98C6;
 $his_cor4: #EFDDEC;
+$his_bg: #E0C0DB;
 
 /* Integrado */
 $int_cor1: #0F83A6;
@@ -85,20 +89,22 @@ $esp_cor3: #8CCDD2;
 $esp_cor4: #d9f0ef;
 
 /* Língua Inglesa */
-$ing_cor1: #069891;
-$ing_cor2: #015F5B;
+$ing_cor1: #00AE9D;
+$ing_cor2: #9853A1;
 $ing_cor3: #8CCDD2;
 $ing_cor4: #d9f0ef;
+$ing_bg: #B3E7E2;
 
 /* Língua Portuguesa */
-$por_cor1: #c9252c;
-$por_cor2: #96171a;
+$por_cor1: #ED1A3B;
+$por_cor2: #00ADA1;
 $por_cor3: #E59798;
 $por_cor4: #f7dedf;
+$por_bg: #FFB5B5;
 
 /* Linguagens */
-$lin_cor1: #64428C;
-$lin_cor2: #3F1F71;
+$lin_cor1: #ED1A3B;
+$lin_cor2: #00ADA1;
 $lin_cor3: #B9A9CB;
 $lin_cor4: #dfdaea;
 
@@ -109,10 +115,11 @@ $lit_cor3: #E59798;
 $lit_cor4: #f7dedf;
 
 /* Matemática */
-$mat_cor1: #1961AC;
-$mat_cor2: #033878;
+$mat_cor1: #0091D0;
+$mat_cor2: #E33F76;
 $mat_cor3: #97B7D9;
 $mat_cor4: #d0e1f0;
+$mat_bg: #B3DEF1;
 
 /* Música */
 $mus_cor1: #64428C;
@@ -137,6 +144,8 @@ $soc_cor1: #C71553;
 $soc_cor2: #8B1038;
 $soc_cor3: #E695B1;
 $soc_cor4: #F7DCE5;
+
+$geral_cor: #FDB913;
 
 /* Variações de cores de segmento */
 /* Linguagens */
@@ -163,10 +172,14 @@ $seg_hum_cor2: #208F6D;
 $seg_hum_cor3: #D7EDE3;
 $seg_hum_cor4: #EEF7F3;
 
+$apoio_cor1: #FDB913;
+$apoio_bg: #FFF1D0;
+
+
 /* Outros */
-$fontName: 'Montserrat';
-$fonteSerifa: 'Noticia Text';
-$defaultFontSize: 14px;
+$fontName: 'Rubik', sans-serif;
+$fonteSerifa: 'Bitter', serif;
+$defaultFontSize: 18px;
 $defaultFontWeight: 300;
 $screen-sm-max: 991px;
 $speed: 0.2s;
@@ -179,6 +192,7 @@ $phone-max-width: 481px;
     display: -webkit-flex;
     display: flex;
 }
+
 @mixin webkit-prefix($property, $value) {
     -webkit-#{$property}: $value;
     #{$property}: $value;
@@ -188,8 +202,15 @@ $phone-max-width: 481px;
 /* Imports the style from the google fonts cdn */
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;600;700;800&family=Rubik:wght@300;600;700;800&display=swap');
+@import url(https://livro-digital.p4ed.com/assets/fonts/woodwing/MathSymbol_JSD-Regular.ttf);
 
 /* Article view style */
+@font-face {
+    font-family: MathSymbol_JSD;
+    src: url(https://livro-digital.p4ed.com/assets/fonts/woodwing/MathSymbol_JSD-Regular.ttf);
+}
+
 html,
 body {
     padding: 0;
@@ -202,6 +223,7 @@ body {
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
     -webkit-overflow-scrolling: touch;
+
     :focus {
         outline: none;
     }
@@ -213,6 +235,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     overflow-x: hidden;
+
     &::after {
         content: ' ';
         display: block;
@@ -241,6 +264,7 @@ span[data-text-edit-color] {
 ._align-right {
     text-align: right;
 }
+
 ._align-middle {
     text-align: center;
 }
@@ -259,9 +283,11 @@ span[data-text-edit-color] {
  */
 .hero-js {
     height: 100%;
+
     body {
         height: 100%;
     }
+
     ._hero-bg-box {
         position: absolute;
         top: 0;
@@ -270,6 +296,7 @@ span[data-text-edit-color] {
         left: 0;
         pointer-events: none;
         overflow: hidden;
+
         ._hero-bg-item {
             position: absolute;
             top: 0;
@@ -283,11 +310,13 @@ span[data-text-edit-color] {
             transition-property: opacity;
             transition-timing-function: linear;
             transition-duration: $speed * 2;
+
             &._current {
                 opacity: 1;
             }
         }
     }
+
     ._hero-content-box {
         position: absolute;
         top: 0;
@@ -296,14 +325,17 @@ span[data-text-edit-color] {
         left: 0;
         overflow-x: hidden;
         overflow-y: auto;
+
         ._hero-content-wrapper {
             background-color: $bodyBackground;
+
             ._hero-content-body {
                 max-width: $max-width;
                 padding: 0 5px;
                 margin-left: auto;
                 margin-right: auto;
                 overflow-x: hidden;
+
                 &::after {
                     content: ' ';
                     display: block;
@@ -312,13 +344,16 @@ span[data-text-edit-color] {
             }
         }
     }
+
     &.hero-js-android {
         body {
             max-width: none;
         }
+
         ._hero-bg-box {
             position: fixed;
         }
+
         ._hero-content-box {
             position: relative;
             margin: 0 -5px;
@@ -335,9 +370,11 @@ span[data-text-edit-color] {
     0% {
         opacity: 0.2;
     }
+
     20% {
         opacity: 1;
     }
+
     100% {
         opacity: 0.2;
     }
@@ -352,6 +389,7 @@ span[data-text-edit-color] {
  }
  */
 @mixin triple-blinking-spans() {
+
     // blink the dots after the label
     span {
         animation-name: kf-triple-blinking-spans;
@@ -359,9 +397,11 @@ span[data-text-edit-color] {
         animation-iteration-count: infinite;
         animation-fill-mode: both;
     }
+
     span:nth-child(2) {
         animation-delay: 0.2s;
     }
+
     span:nth-child(3) {
         animation-delay: 0.4s;
     }
@@ -371,6 +411,7 @@ span[data-text-edit-color] {
  Additional styles for .social and .video components
  */
 @mixin media-component-states() {
+
     &.loading,
     &.error {
         font-weight: 300;
@@ -379,23 +420,26 @@ span[data-text-edit-color] {
         line-height: 1.6;
         padding: 0.5em;
     }
+
     &.loading {
         color: #888888;
         background-color: rgb(252, 252, 252);
         text-transform: lowercase;
 
         @include triple-blinking-spans();
+
         span {
             padding-left: 0.2em;
             font-weight: bold;
             color: #666666;
         }
     }
+
     &.error {
         background-color: rgba(169, 68, 66, 0.05);
         color: rgba(169, 68, 66, 0.8);
 
-        > div {
+        >div {
             display: flex;
             -webkit-flex-flow: row nowrap;
             flex-flow: row nowrap;
@@ -410,7 +454,7 @@ span[data-text-edit-color] {
                 padding: 0 40px 0 40px;
             }
 
-            > div:last-child {
+            >div:last-child {
                 display: inline-block;
                 flex: 1 100%;
             }

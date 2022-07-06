@@ -1,0 +1,78 @@
+.css_06_boxe_peso1 {
+  margin-top: 32px;
+
+  .css_06_boxe_peso1_secao_titulo {
+    background-color: $apoio_cor1;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+
+    .css_06_boxe_peso1_titulo {
+      margin: 0;
+      font-family: $fontName;
+      font-size: 34px;
+      font-weight: 800;
+      font-style: normal;
+      color: #fff;
+      background-color: #f5f5f5;
+      width: fit-content;
+      padding: 16px 42px;
+      border-radius: 0 40px 40px 0;
+    }
+
+  }
+
+  .css_06_boxe_peso1_secao {
+    border: solid 4px $apoio_cor1;
+    border-radius: 0px 0px 15px 15px;
+    min-height: 100px;
+    padding: 42px;
+  }
+
+  &.artes {
+    .css_06_boxe_peso1_titulo {
+      background-color: $art_cor1;
+    }
+  }
+
+  &.ciencias {
+    .css_06_boxe_peso1_titulo {
+      background-color: $cie_cor1;
+    }
+  }
+
+  &.geografia {
+    .css_06_boxe_peso1_titulo {
+      background-color: $geo_cor1;
+    }
+  }
+
+  &.ciencias {
+    .css_06_boxe_peso1_titulo {
+      background-color: $his_cor1;
+    }
+  }
+
+  &.lingua_portuguesa {
+    .css_06_boxe_peso1_titulo {
+      background-color: $por_cor1;
+    }
+  }
+
+  &.lingua_inglesa {
+    .css_06_boxe_peso1_titulo {
+      background-color: $ing_cor1;
+    }
+  }
+
+  &.matematica {
+    .css_06_boxe_peso1_titulo {
+      background-color: $mat_cor1;
+    }
+  }
+
+  &.artes {
+    .css_06_boxe_peso1_titulo {
+      background-color: $art_cor1;
+    }
+  }
+}

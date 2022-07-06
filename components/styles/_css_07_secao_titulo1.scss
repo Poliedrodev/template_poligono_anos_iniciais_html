@@ -1,69 +1,177 @@
 .css_07_secao_titulo1 {
-  // position: relative;
-  // color: white;
-  // font-size: 1.25rem;
-  // display: flex;
-  // align-items: center;
-  // gap: 8px;
-  // font-family: 'Arial', sans-serif;
-  // font-weight: 800;
-  // background: linear-gradient(90deg, rgba(69,151,61,1) 0%, rgba(48,110,43,1) 100%);
-  // padding: 8px 20px 8px 8px;
-  // border: 4px solid #45973D;
-  // z-index: 1;
-  // width: max-content;
-  // margin-bottom: -25px;
-  // margin-top: 30px;
-  // &:before {
-  //   content: '';
-  //   background-image: url('img/06_boxe_04.svg');
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   width: 32px;
-  //   height: 32px;
-  //   display: block;
-  // }
-  margin-top: 24px;
-  text-align: left;
-  font-size: 26px;
-  color: $textColor;
-  font-family: $fontName;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 48px;
+
+  .css_07_secao_titulo1_text {
+    margin: 0;
+    text-align: left;
+    font-size: 34px;
+    color: #666666;
+    font-weight: 800;
+    font-family: $fontName;
+
+  }
+
+  .css_07_secao_titulo1_icon {
+    background-color: #f5f5f5;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+  }
 
   &.artes {
-    color: #64428C !important;
+    .css_07_secao_titulo1_text {
+      color: $art_cor1;
+    }
+
+    &.secao_01 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-ART-hora-de-criar.svg);
+      }
+    }
+
+    &.secao_02 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-ART-vamos-conhecer-a-arte.svg);
+      }
+    }
+
+    &.secao_03 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-ART-viva-a-arte.svg);
+      }
+    }
   }
-  &.biologia {
-    color: #45973D !important;
-  }
-  &.filosofia {
-    color: #536DA7 !important;
-  }
-  &.fisica {
-    color: #00909B !important;
-  }
-  &.geografia {
-    color: #D85509 !important;
-  }
+
   &.historia {
-    color: #951B81 !important;
+    .css_07_secao_titulo1_text {
+      color: $his_cor1;
+    }
+
+    &.secao_01 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-HIS-laboratorio-da-memoria.svg);
+      }
+    }
   }
+
+  &.geografia {
+    .css_07_secao_titulo1_text {
+      color: $geo_cor1;
+    }
+
+    &.secao_01 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-GEO-representacoes-do-espaco.svg);
+      }
+    }
+  }
+
   &.lingua_inglesa {
-    color: #069891 !important;
+    .css_07_secao_titulo1_text {
+      color: $ing_cor1;
+    }
+
+    &.secao_01 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-ING-glossary.svg);
+      }
+    }
+
+    &.secao_02 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-ING-listening-time.svg);
+      }
+    }
+
+    &.secao_03 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-ING-reading-time.svg);
+      }
+    }
+
+    &.secao_04 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-ING-speaking-time.svg);
+      }
+    }
+
+    &.secao_05 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-ING-writing-time.svg);
+      }
+    }
   }
+
   &.lingua_portuguesa {
-    color: #C51A1B !important;
+    .css_07_secao_titulo1_text {
+      color: $por_cor1;
+    }
+
+    &.secao_01 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-LPO-descobrindo-letras-e-palavras.svg);
+      }
+    }
+
+    &.secao_02 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-LPO-hora-da-leitura.svg);
+      }
+    }
+
+    &.secao_03 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-LPO-hora-da-producao.svg);
+      }
+    }
+
+    &.secao_04 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-LPO-vamos-estudar-a-lingua.svg);
+      }
+    }
   }
+
+  &.ciencias {
+    .css_07_secao_titulo1_text {
+      color: $cie_cor1;
+    }
+
+    &.secao_01 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-CIE-ciencia-em-acao.svg);
+      }
+    }
+
+    &.secao_02 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-CIE-oficina-de-ideias.svg);
+      }
+    }
+  }
+
   &.matematica {
-    color: #1961AC !important;
+    .css_07_secao_titulo1_text {
+      color: $mat_cor1;
+    }
+
+    &.secao_01 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-MAT-de-olho-no-problema.svg);
+      }
+    }
+
+    &.secao_02 {
+      .css_07_secao_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/icones/secao1-MAT-jogos-e-brincadeiras.svg);
+      }
+    }
   }
-  &.producao_de_texto {
-    color: #0F83A6 !important;
-  }
-  &.quimica {
-    color: #B80071 !important;
-  }
-  &.sociologia {
-    color: #C71553 !important;
-  }
+
+
 }

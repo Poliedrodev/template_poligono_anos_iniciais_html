@@ -3,901 +3,2779 @@
     "description": "Studio Digital Editor Poliedro Template Zero",
     "version": "1.8.0",
     "defaultComponentOnEnter": "css_02_texto_geral1",
-
     "components": [
-
+        {
+            "name": "audio",
+            "icon": "icons/components/icon_00_arte.svg",
+            "label": "Componente Áudio",
+            "properties": [
+                "style_lumen_mais",
+                "text-align",
+                "letter-spacing",
+                "line-height",
+                {
+                    "name": "embed-code",
+                    "directiveKey": "html"
+                }
+            ],
+            "directiveOptions": {
+                "audio_url": {
+                    "stripStylingOnPaste": true
+                },
+                "audio_title": {
+                    "stripStylingOnPaste": true
+                },
+                "audio_content": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "author",
+            "icon": "icons/components/author.svg",
+            "label": {
+                "key": "COMPONENT_AUTHOR_LABEL"
+            },
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height",
+                {
+                    "name": "hyperlink",
+                    "directiveKey": "link-url"
+                }
+            ],
+            "directiveOptions": {
+                "name": {
+                    "stripStylingOnPaste": true
+                },
+                "location": {
+                    "stripStylingOnPaste": true
+                },
+                "link": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "body",
+            "label": {
+                "key": "COMPONENT_BODY_LABEL"
+            },
+            "icon": "icons/components/body.svg",
+            "properties": [
+                "drop-capital",
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "countStatistics": true,
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_fica_a_dica",
+            "icon": "icons/components/container.svg",
+            "label": "Container #Ficaadica",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
+        {
+            "name": "container_grupo_radio_linha",
+            "icon": "icons/components/container.svg",
+            "label": "Container Grupo Radio em Linha",
+            "properties": [
+                "style",
+                "letter-spacing",
+                "line-height"
+            ],
+            "restrictChildren": {
+                "container_grupo_radio_2": {},
+                "container_grupo_radio_3": {},
+                "container_grupo_radio_4": {},
+                "container_grupo_radio_5": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Radios",
+                            "name": "Radios",
+                            "components": [
+                                "container_grupo_radio_2",
+                                "container_grupo_radio_3",
+                                "container_grupo_radio_4",
+                                "container_grupo_radio_5"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "container_grupo_radio_lado_a_lado",
+            "icon": "icons/components/container.svg",
+            "label": "Container Grupo Radio Lado a Lado",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "restrictChildren": {
+                "container_grupo_radio_2": {},
+                "container_grupo_radio_3": {},
+                "container_grupo_radio_4": {},
+                "container_grupo_radio_5": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Radios",
+                            "name": "Radios",
+                            "components": [
+                                "container_grupo_radio_2",
+                                "container_grupo_radio_3",
+                                "container_grupo_radio_4",
+                                "container_grupo_radio_5"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "container_grupo_radio_2",
+            "label": "2 Radio",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "defaultComponentOnEnter": "container_grupo_radio_2",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "radio1": {
+                    "stripStylingOnPaste": true
+                },
+                "radio2": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_grupo_radio_3",
+            "label": "3 Radio",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "defaultComponentOnEnter": "container_grupo_radio_3",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "radio1": {
+                    "stripStylingOnPaste": true
+                },
+                "radio2": {
+                    "stripStylingOnPaste": true
+                },
+                "radio3": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_grupo_radio_4",
+            "label": "4 Radio",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "defaultComponentOnEnter": "container_grupo_radio_4",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "radio1": {
+                    "stripStylingOnPaste": true
+                },
+                "radio2": {
+                    "stripStylingOnPaste": true
+                },
+                "radio3": {
+                    "stripStylingOnPaste": true
+                },
+                "radio4": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_grupo_radio_5",
+            "label": "5 Radio",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "defaultComponentOnEnter": "container_grupo_radio_5",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "radio1": {
+                    "stripStylingOnPaste": true
+                },
+                "radio2": {
+                    "stripStylingOnPaste": true
+                },
+                "radio3": {
+                    "stripStylingOnPaste": true
+                },
+                "radio4": {
+                    "stripStylingOnPaste": true
+                },
+                "radio5": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_grupo_checkbox",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "label": {
+                "key": "COMPONENT_CHECKBOX_LABEL"
+            },
+            "properties": [
+                "style",
+                "position",
+                "background-color"
+            ],
+            "restrictChildren": {
+                "container_grupo_checkbox_1": {},
+                "container_grupo_checkbox_2": {},
+                "container_grupo_checkbox_3": {},
+                "container_grupo_checkbox_4": {},
+                "container_grupo_checkbox_5": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Checkbox",
+                            "name": "Checkbox",
+                            "components": [
+                                "container_grupo_checkbox_1",
+                                "container_grupo_checkbox_2",
+                                "container_grupo_checkbox_3",
+                                "container_grupo_checkbox_4",
+                                "container_grupo_checkbox_5"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "container_grupo_checkbox_lado_a_lado",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "label": {
+                "key": "COMPONENT_CHECKBOX_SIDE_LABEL"
+            },
+            "properties": [
+                "style",
+                "position",
+                "background-color",
+                "text-align"
+            ],
+            "restrictChildren": {
+                "container_grupo_checkbox_1": {},
+                "container_grupo_checkbox_2": {},
+                "container_grupo_checkbox_3": {},
+                "container_grupo_checkbox_4": {},
+                "container_grupo_checkbox_5": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Checkbox",
+                            "name": "Checkbox",
+                            "components": [
+                                "container_grupo_checkbox_1",
+                                "container_grupo_checkbox_2",
+                                "container_grupo_checkbox_3",
+                                "container_grupo_checkbox_4",
+                                "container_grupo_checkbox_5"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "container_grupo_checkbox_1",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "label": "Checkbox 1",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "checkbox1": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_grupo_checkbox_2",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "label": "Checkbox 2",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "checkbox1": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox2": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_grupo_checkbox_3",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "label": "Checkbox 3",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "checkbox1": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox2": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox3": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_grupo_checkbox_4",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "label": "Checkbox 4",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "checkbox1": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox2": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox3": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox4": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_grupo_checkbox_5",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "label": "Checkbox 5",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "checkbox1": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox2": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox3": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox4": {
+                    "stripStylingOnPaste": true
+                },
+                "checkbox5": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container_read_more",
+            "icon": "icons/components/container.svg",
+            "label": "Container Read More",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
+        {
+            "name": "container_repertorio_cultural",
+            "icon": "icons/components/container.svg",
+            "label": "Container Repertório Cultural",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
+        {
+            "name": "container_saiba_mais",
+            "icon": "icons/components/container.svg",
+            "label": "Container Saiba Mais",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
         {
             "name": "css_00_arte",
             "label": "00 arte",
             "icon": "icons/components/icon_00_arte.svg",
-            "properties": ["text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_00_cartografia",
             "label": "00 cartografia",
             "icon": "icons/components/icon_00_cartografia.svg",
-            "properties": ["text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_00_ilustracao",
             "label": "00 ilustracao",
             "icon": "icons/components/icon_00_ilustracao.svg",
-            "properties": ["text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_00_licenciamento_texto_terceiro",
             "label": "00 licenciamento texto terceiro",
             "icon": "icons/components/icon_00_licenciamento_texto_terceiro.svg",
-            "properties": ["text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_00_multimidia",
             "label": "00 multimidia",
             "icon": "icons/components/icon_00_multimidia.svg",
-            "properties": ["text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_00_revisao",
             "label": "00 revisao",
             "icon": "icons/components/icon_00_revisao.svg",
-            "properties": ["text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_01_bullet_unid",
             "icon": "icons/components/icon_01_bullet_unid.svg",
             "label": "01 Bullet Unidade",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_01_texto_unid",
             "icon": "icons/components/icon_01_texto_unid.svg",
             "label": "01 Texto Unidade",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_01_titulo_cap_num",
             "icon": "icons/components/icon_01_titulo_cap.svg",
             "label": "Número do Capítulo",
-            "properties": ["style"]
+            "properties": [
+                "style"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_01_titulo_cap",
             "icon": "icons/components/icon_01_titulo_cap.svg",
             "label": "01 Título Capítulo",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_01_titulo_unid",
             "icon": "icons/components/icon_01_titulo_unid.svg",
             "label": "01 Título Unidade",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_01_titulo1",
             "icon": "icons/components/icon_01_titulo1.svg",
             "label": "01 Título 1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },        
-
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
         {
             "name": "css_01_titulo2",
             "icon": "icons/components/icon_01_titulo2.svg",
             "label": "01 Título 2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_01_titulo3",
             "icon": "icons/components/icon_01_titulo3.svg",
             "label": "01 Título 3",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style_section",
+                "style_boxes",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_01_titulo4",
             "icon": "icons/components/icon_01_titulo4.svg",
             "label": "01 Título 4",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_bullet",
             "icon": "icons/components/icon_02_texto_bullet.svg",
             "label": "02 Texto Bullet",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "style_section",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "restrictChildren": {
+                "css_02_texto_bullet_itens": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Texto Bullet",
+                            "name": "Texto Bullet",
+                            "components": [
+                                "css_02_texto_bullet_itens"
+                            ]
+                        }
+                    ]
+                }
+            }
         },
-
+        {
+            "name": "css_02_texto_bullet_itens",
+            "icon": "icons/components/icon_02_texto_bullet.svg",
+            "label": "Texto Bullet",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
+        {
+            "name": "css_02_texto_bullet_item_texto",
+            "icon": "icons/components/icon_02_texto_bullet.svg",
+            "label": "Texto Bullet",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
         {
             "name": "css_02_texto_citado_fonte",
             "icon": "icons/components/icon_02_texto_citado_fonte.svg",
-            "label": "02 Texto Citado Fonte",
-            "properties": ["style", "letter-spacing", "line-height"]
+            "label": "Citado Fonte",
+            "properties": [
+                "style",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
-            "name": "css_02_texto_citado_titulo",
+            "name": "css_02_texto_citado_titulo1",
             "icon": "icons/components/icon_02_texto_citado_titulo.svg",
-            "label": "02 Texto Citado Título",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Citado Título",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
+        {
+            "name": "css_02_texto_citado_titulo2",
+            "icon": "icons/components/icon_02_texto_citado_titulo.svg",
+            "label": "Citado Título 2",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
         {
             "name": "css_02_texto_citado",
             "icon": "icons/components/icon_02_texto_citado.svg",
-            "label": "02 Texto Citado",
-            "properties": ["drop-capital", "style", "text-align", "letter-spacing", "line-height"]
+            "label": "Citado",
+            "properties": [
+                "drop-capital",
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_definicao",
             "icon": "icons/components/icon_02_texto_definicao.svg",
-            "label": "02 Texto Definição",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Definição",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_destaque",
             "icon": "icons/components/icon_02_texto_destaque.svg",
-            "label": "02 Texto Destaque 1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Destaque 1",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_geral",
             "icon": "icons/components/icon_02_texto_geral1.svg",
-            "label": "02 Texto Geral",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Geral",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_geral1",
             "icon": "icons/components/icon_02_texto_geral1.svg",
-            "label": "02 Texto Geral 1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Geral 1",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_geral2",
             "icon": "icons/components/icon_02_texto_geral2.svg",
-            "label": "02 Texto Geral 2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Geral 2",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_geral3",
             "icon": "icons/components/icon_02_texto_geral3.svg",
-            "label": "02 Texto Geral 3",
-            "properties": ["drop-capital", "style", "text-align", "letter-spacing", "line-height"]
+            "label": "Geral 3",
+            "properties": [
+                "drop-capital",
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_glossario_titulo",
             "icon": "icons/components/icon_02_texto_glossario_titulo.svg",
-            "label": "02 Texto Glossário Título",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Glossário Título",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_glossario",
             "icon": "icons/components/icon_02_texto_glossario.svg",
-            "label": "02 Texto Glossário",
-            "properties": ["style", "text-align", "position", "letter-spacing", "line-height"]
+            "label": "Glossário",
+            "properties": [
+                "style",
+                "text-align",
+                "position",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_item",
             "icon": "icons/components/icon_02_texto_item.svg",
-            "label": "02 Texto Item",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Item",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_manuscrito",
             "icon": "icons/components/icon_02_texto_manuscrito.svg",
-            "label": "02 Texto Manuscrito",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Manuscrito",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_02_texto_vocabulario",
             "icon": "icons/components/icon_02_texto_vocabulario.svg",
-            "label": "02 Texto Vocabulário",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": "Vocabulário",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-        
         {
-            "name": "css_03_exercicio_alternativa",
-            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
-            "label": "03 Exercício Alternativa",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "name": "css_03_2exercicio_container",
+            "icon": "icons/components/container.svg",
+            "label": "Exercício Container",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
         },
-
+        {
+            "name": "css_03_2exercicio_container_edit",
+            "icon": "icons/components/container.svg",
+            "label": "Editável Exercício Container",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "properties": [
+                "style",
+                "style_section",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "number_exercicio": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_03_2exercicio_alternativa",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "label": "Exercício Alternativa",
+            "allowNesting": "yes",
+            "properties": [
+                "styles-type-list",
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "restrictChildren": {
+                "css_03_2exercicio_alternativa_item": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Alternativa",
+                            "name": "Alternativa",
+                            "components": [
+                                "css_03_2exercicio_alternativa_item"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "css_03_2exercicio_alternativa_item",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "label": "Alternativa",
+            "allowNesting": "yes",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
+        {
+            "name": "css_03_2exercicio_alternativa_edit",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "label": "Editável Exercício Alternativa",
+            "allowNesting": "yes",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "restrictChildren": {
+                "css_03_2exercicio_alternativa_item_edit": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Alternativa Editável",
+                            "name": "Alternativa Editável",
+                            "components": [
+                                "css_03_2exercicio_alternativa_item_edit"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "css_03_2exercicio_alternativa_item_edit",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "label": "Alternativa Editável",
+            "allowNesting": "yes",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "alternativa_text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_03_2exercicio_alternativa_item_texto",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "label": "Texto Alternativa Editável",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text_alternativa": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_03_2exercicio_alternativa_assinalar",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "label": "Exercício Alternativa Assinalar",
+            "allowNesting": "yes",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "restrictChildren": {
+                "css_03_2exercicio_alternativa_assinalar_itens": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Alternativa Assinalar",
+                            "name": "Alternativa Assinalar",
+                            "components": [
+                                "css_03_2exercicio_alternativa_assinalar_itens"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "css_03_2exercicio_alternativa_assinalar_itens",
+            "icon": "icons/components/icon_03_exercicio_alternativa.svg",
+            "label": "Alternativa Assinalar",
+            "allowNesting": "yes",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
+        {
+            "name": "css_03_2exercicio_continuacao",
+            "icon": "icons/components/icon_03_exercicio_continuacao.svg",
+            "label": "Exercício Continuação",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text_continuacao": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_03_2exercicio_enunciado",
+            "icon": "icons/components/icon_03_exercicio_enunciado.svg",
+            "label": "Exercício Enunciado",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text_enunciado": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
         {
             "name": "css_03_exercicio_bullet",
             "icon": "icons/components/icon_03_exercicio_bullet.svg",
             "label": "03 Exercício Bullet",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
+        {
+            "name": "css_03_2exercicio_bullet",
+            "icon": "icons/components/icon_02_texto_bullet.svg",
+            "label": "Exercício Bullet(Novo)",
+            "properties": [
+                "style",
+                "style_section",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "restrictChildren": {
+                "css_03_2exercicio_bullet_itens": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Texto Bullet",
+                            "name": "Texto Bullet",
+                            "components": [
+                                "css_03_2exercicio_bullet_itens"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "css_03_2exercicio_bullet_itens",
+            "icon": "icons/components/icon_02_texto_bullet.svg",
+            "label": "Texto Bullet",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
         {
             "name": "css_03_exercicio_citado_titulo",
             "icon": "icons/components/icon_03_exercicio_citado_titulo.svg",
             "label": "03 Exercício Citado Título",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_03_exercicio_citado",
             "icon": "icons/components/icon_03_exercicio_citado.svg",
             "label": "03 Exercício Citado",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
-        {
-            "name": "css_03_exercicio_continuacao",
-            "icon": "icons/components/icon_03_exercicio_continuacao.svg",
-            "label": "03 Exercício Continuação",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_03_exercicio_enunciado",
-            "icon": "icons/components/icon_03_exercicio_enunciado.svg",
-            "label": "03 Exercício Enunciado",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_03_exercicio_item_romano",
-            "icon": "icons/components/icon_03_exercicio_item_romano.svg",
-            "label": "03 Exercício Item Romano",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
         {
             "name": "css_03_exercicio_item_vf",
             "icon": "icons/components/icon_03_exercicio_item_romano.svg",
             "label": "03 Exercício Item VF",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
-        {
-            "name": "css_03_exercicio_item",
-            "icon": "icons/components/icon_03_exercicio_item.svg",
-            "label": "03 Exercício Item",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
         {
             "name": "css_03_exercicio_resolvido_bullet",
             "icon": "icons/components/icon_03_exercicio_resolvido_bullet.svg",
             "label": "03 Exercício Resolvido Bullet",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_03_exercicio_resolvido_item",
             "icon": "icons/components/icon_03_exercicio_resolvido_item.svg",
             "label": "03 Exercício Resolvido Item",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_03_exercicio_resolvido",
             "icon": "icons/components/icon_03_exercicio_resolvido.svg",
             "label": "03 Exercício Resolvido",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_03_exercicio_texto",
             "icon": "icons/components/icon_03_exercicio_texto.svg",
             "label": "03 Exercício Texto",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_04_professor_comentario",
             "icon": "icons/components/icon_04_professor_comentario.svg",
             "label": "04 Professor Comentário",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_04_professor_resposta",
             "icon": "icons/components/icon_04_professor_resposta.svg",
             "label": "04 Professor Resposta",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_04_professor_roteiro_cd",
             "icon": "icons/components/icon_04_professor_roteiro_cd.svg",
             "label": "04 Professor Roteiro CD",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_04_proposta_citado_fonte",
             "icon": "icons/components/icon_04_proposta_citado_fonte.svg",
             "label": "04 Proposta Citado Fonte",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_04_proposta_didatica_citado",
             "icon": "icons/components/icon_04_proposta_didatica_citado.svg",
             "label": "04 Proposta Didática Citado",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_04_proposta_didatica",
             "icon": "icons/components/icon_04_proposta_didatica.svg",
             "label": "04 Proposta Didática",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_balao_de_fala",
             "icon": "icons/components/icon_05_balao_de_fala.svg",
             "label": "05 Balão de Fala",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_cota_titulo",
             "icon": "icons/components/icon_05_cota_titulo.svg",
             "label": "05 Cota Título",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_cota",
             "icon": "icons/components/icon_05_cota.svg",
             "label": "05 Cota",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_credito1",
             "icon": "icons/components/icon_05_credito1.svg",
             "label": "05 Crédito 1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_credito2",
             "icon": "icons/components/icon_05_credito2.svg",
             "label": "05 Crédito 2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_fonte_mapa",
             "icon": "icons/components/icon_05_fonte.svg",
             "label": "05 Fonte Mapa",
-            "properties": ["style", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_fonte",
             "icon": "icons/components/icon_05_fonte.svg",
             "label": "05 Fonte",
-            "properties": ["style", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_grafico_texto",
             "icon": "icons/components/icon_05_grafico_texto.svg",
             "label": "05 Gráfico Texto",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_grafico_titulo",
             "icon": "icons/components/icon_05_grafico_titulo.svg",
             "label": "05 Gráfico Título",
-            "properties": ["style", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_legenda_unidade",
             "icon": "icons/components/icon_05_legenda_unidade.svg",
             "label": "05 Legenda Unidade",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_legenda",
             "icon": "icons/components/icon_05_legenda.svg",
             "label": "05 Legenda",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_linha_exercicio",
             "icon": "icons/components/icon_05_linha_exercicio.svg",
             "label": "05 Linha Exercício",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_mapa_titulo",
             "icon": "icons/components/icon_05_mapa_titulo.svg",
             "label": "05 Mapa Título",
-            "properties": ["position", "style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "position",
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_05_nota_rodape",
             "icon": "icons/components/icon_05_nota_rodape.svg",
             "label": "05 Nota Rodapé",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_bullet",
             "icon": "icons/components/icon_06_boxe_bullet.svg",
             "label": "06 Boxe Bullet",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_exercicio_continuacao",
             "icon": "icons/components/icon_06_boxe_exercicio_continuacao.svg",
             "label": "06 Boxe Exercício Continuação",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_exercicio",
             "icon": "icons/components/icon_06_boxe_exercicio.svg",
             "label": "06 Boxe Exercício",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
+        {
+            "name": "css_06_boxe_peso1",
+            "icon": "icons/components/icon_06_boxe_item.svg",
+            "label": "Peso 1",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_06_boxe_peso2",
+            "icon": "icons/components/icon_06_boxe_item.svg",
+            "label": "Peso 2",
+            "properties": [
+                "style",
+                "style_modelo_peso",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_06_boxe_peso3",
+            "icon": "icons/components/icon_06_boxe_item.svg",
+            "label": "Peso 3",
+            "properties": [
+                "style",
+                "style_modelo_peso",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
         {
             "name": "css_06_boxe_item",
             "icon": "icons/components/icon_06_boxe_item.svg",
             "label": "06 Boxe Item",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_texto_citado",
             "icon": "icons/components/icon_06_boxe_texto_citado.svg",
             "label": "06 Boxe Texto Citado",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_texto1",
             "icon": "icons/components/icon_06_boxe_texto1.svg",
             "label": "06 Boxe Texto 1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_texto2",
             "icon": "icons/components/icon_06_boxe_texto2.svg",
             "label": "06 Boxe Texto 2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_texto3",
             "icon": "icons/components/icon_06_boxe_texto3.svg",
             "label": "06 Boxe Texto 3",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_titulo_texto_citado",
             "icon": "icons/components/icon_06_boxe_titulo_texto_citado.svg",
             "label": "Boxe Título Texto Citado",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_titulo1",
             "icon": "icons/components/icon_06_boxe_titulo1.svg",
             "label": "06 Boxe Título 1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_titulo2",
             "icon": "icons/components/icon_06_boxe_titulo2.svg",
             "label": "06 Boxe Título 2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_06_boxe_titulo3",
             "icon": "icons/components/icon_06_boxe_titulo3.svg",
             "label": "06 Boxe Título 3",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_exercicio_alternativa",
             "icon": "icons/components/icon_07_secao_exercicio_alternativa.svg",
             "label": "07 Seção Exercício Alternativa",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_exercicio_bullet",
             "icon": "icons/components/icon_07_secao_exercicio_bullet.svg",
             "label": "07 Seção Exercício Bullet",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_exercicio_continuacao",
             "icon": "icons/components/icon_07_secao_exercicio_continuacao.svg",
             "label": "07 Seção Exercício Continuação",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_exercicio_item",
             "icon": "icons/components/icon_07_secao_exercicio_item.svg",
             "label": "07 Seção Exercício Item",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_exercicio1",
             "icon": "icons/components/icon_07_secao_exercicio1.svg",
             "label": "07 Seção Exercício 1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_exercicio2",
             "icon": "icons/components/icon_07_secao_exercicio2.svg",
             "label": "07 Seção Exercício 2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_exercicio3",
             "icon": "icons/components/icon_07_secao_exercicio3.svg",
             "label": "07 Seção Exercício 3",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_exercicio4",
             "icon": "icons/components/icon_07_secao_exercicio4.svg",
             "label": "07 Seção Exercício 4",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_texto_citado",
             "icon": "icons/components/icon_07_secao_texto_citado.svg",
             "label": "07 Seção Texto Citado",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_texto1",
             "icon": "icons/components/icon_07_secao_texto1.svg",
             "label": "07 Seção Texto 1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_texto2",
             "icon": "icons/components/icon_07_secao_texto2.svg",
             "label": "07 Seção Texto 2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_titulo_citado",
             "icon": "icons/components/icon_07_secao_titulo_citado.svg",
             "label": "07 Seção Título Citado",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_titulo1",
             "icon": "icons/components/icon_07_secao_titulo1.svg",
             "label": "07 Seção Título 1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "style_07_secao",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_titulo2",
             "icon": "icons/components/icon_07_secao_titulo2.svg",
             "label": "07 Seção Título 2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_titulo3",
             "icon": "icons/components/icon_07_secao_titulo3.svg",
             "label": "07 Seção Título 3",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_07_secao_titulo4",
             "icon": "icons/components/icon_07_secao_titulo4.svg",
             "label": "07 Seção Título 4",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_08_tabela_bullet",
             "icon": "icons/components/icon_08_tabela_bullet.svg",
             "label": "css_08_tabela_bullet",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_08_tabela_gravata1",
             "icon": "icons/components/icon_08_tabela_gravata1.svg",
             "label": "css_08_tabela_gravata1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_08_tabela_gravata2",
             "icon": "icons/components/icon_08_tabela_gravata2.svg",
             "label": "css_08_tabela_gravata2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_08_tabela_gravata3",
             "icon": "icons/components/icon_08_tabela_gravata3.svg",
             "label": "css_08_tabela_gravata3",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_08_tabela_item",
             "icon": "icons/components/icon_08_tabela_item.svg",
             "label": "css_08_tabela_item",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_08_tabela_texto",
             "icon": "icons/components/icon_08_tabela_item.svg",
             "label": "css_08_tabela_texto",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_08_tabela_titulo",
             "icon": "icons/components/icon_08_tabela_titulo.svg",
             "label": "css_08_tabela_titulo",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_09_iniciais_peso1",
             "icon": "icons/components/icon_09_iniciais_peso1.svg",
             "label": "css_09_iniciais_peso1",
-            "properties": []
+            "properties": [],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_09_iniciais_peso2",
             "icon": "icons/components/icon_09_iniciais_peso2.svg",
             "label": "css_09_iniciais_peso2",
-            "properties": []
+            "properties": [],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_09_iniciais_peso3",
             "icon": "icons/components/icon_09_iniciais_peso3.svg",
             "label": "css_09_iniciais_peso3",
-            "properties": []
+            "properties": [],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_09_iniciais_peso4",
             "icon": "icons/components/icon_09_iniciais_peso4.svg",
             "label": "css_09_iniciais_peso4",
-            "properties": []
+            "properties": [],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
             "name": "css_09_iniciais_texto1",
             "icon": "icons/components/icon_09_iniciais_texto1.svg",
             "label": "css_09_iniciais_texto1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
         },
-
         {
             "name": "css_09_iniciais_texto2",
             "icon": "icons/components/icon_09_iniciais_texto2.svg",
             "label": "css_09_iniciais_texto2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
         },
-
         {
             "name": "css_10_finais_exercicio_alternativa",
             "icon": "icons/components/icon_10_finais_exercicio_alternativa.svg",
             "label": "css_10_finais_exercicio_alternativa",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
-
         {
-            "name": "css_10_finais_exercicio_bullet",
-            "icon": "icons/components/icon_10_finais_exercicio_bullet.svg",
-            "label": "css_10_finais_exercicio_bullet",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_exercicio_continuacao",
-            "icon": "icons/components/icon_10_finais_exercicio_continuacao.svg",
-            "label": "css_10_finais_exercicio_continuacao",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_exercicio_item",
-            "icon": "icons/components/icon_10_finais_exercicio_item.svg",
-            "label": "css_10_finais_exercicio_item",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_exercicio",
-            "icon": "icons/components/icon_10_finais_exercicio.svg",
-            "label": "css_10_finais_exercicio",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_texto1",
-            "icon": "icons/components/icon_10_finais_texto1.svg",
-            "label": "css_10_finais_texto1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_texto2",
-            "icon": "icons/components/icon_10_finais_texto2.svg",
-            "label": "css_10_finais_texto2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_texto3",
-            "icon": "icons/components/icon_10_finais_texto3.svg",
-            "label": "css_10_finais_texto3",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_titulo1",
-            "icon": "icons/components/icon_10_finais_titulo1.svg",
-            "label": "css_10_finais_titulo1",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_titulo2",
-            "icon": "icons/components/icon_10_finais_titulo2.svg",
-            "label": "css_10_finais_titulo2",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_titulo3",
-            "icon": "icons/components/icon_10_finais_titulo3.svg",
-            "label": "css_10_finais_titulo3",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-
-        {
-            "name": "css_10_finais_titulo4",
-            "icon": "icons/components/icon_10_finais_titulo4.svg",
-            "label": "css_10_finais_titulo4",
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
-        },
-        
-        {
-            "name": "body",
-            "label": { "key": "COMPONENT_BODY_LABEL" },
-            "icon": "icons/components/body.svg",
-            "properties": ["drop-capital", "style", "text-align", "letter-spacing", "line-height"],
-            "countStatistics": true
-        },
-
-        {
-            "name": "container",
+            "name": "container_faixa",
             "icon": "icons/components/container.svg",
             "selectionMethod": "handle",
-            "allowNesting": "one-level",
-            "label": { "key": "COMPONENT_CONTAINER_LABEL" },
-            "properties": ["style", "position", "background-color"]
+            "allowNesting": "yes",
+            "label": "container faixa",
+            "properties": [
+                "style",
+                "position",
+                "background-color"
+            ]
         },
-
         {
             "name": "container_nivel1",
             "icon": "icons/components/container.svg",
             "selectionMethod": "handle",
             "allowNesting": "yes",
             "label": "container nivel 1",
-            "properties": ["style", "position", "background-color"]
+            "properties": [
+                "style",
+                "position",
+                "background-color"
+            ]
         },
-
         {
             "name": "container_nivel2",
             "icon": "icons/components/container.svg",
             "selectionMethod": "handle",
             "allowNesting": "yes",
             "label": "container nivel 2",
-            "properties": ["style", "position", "background-color"]
+            "properties": [
+                "style",
+                "position",
+                "background-color"
+            ]
         },
-
         {
             "name": "container_nivel3",
             "icon": "icons/components/container.svg",
             "selectionMethod": "handle",
             "allowNesting": "yes",
             "label": "container nivel 3",
-            "properties": ["style", "position", "background-color"]
+            "properties": [
+                "style",
+                "position",
+                "background-color"
+            ]
         },
-
         {
             "name": "container_questao",
             "icon": "icons/components/container.svg",
             "selectionMethod": "handle",
             "allowNesting": "yes",
             "label": "container questao",
-            "properties": ["style", "position", "background-color"]
+            "properties": [
+                "style",
+                "position",
+                "background-color"
+            ]
         },
-
+        {
+            "name": "css_10_finais_exercicio_bullet",
+            "icon": "icons/components/icon_10_finais_exercicio_bullet.svg",
+            "label": "css_10_finais_exercicio_bullet",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_exercicio_continuacao",
+            "icon": "icons/components/icon_10_finais_exercicio_continuacao.svg",
+            "label": "css_10_finais_exercicio_continuacao",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_exercicio_item",
+            "icon": "icons/components/icon_10_finais_exercicio_item.svg",
+            "label": "css_10_finais_exercicio_item",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_exercicio",
+            "icon": "icons/components/icon_10_finais_exercicio.svg",
+            "label": "css_10_finais_exercicio",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_texto1",
+            "icon": "icons/components/icon_10_finais_texto1.svg",
+            "label": "css_10_finais_texto1",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_texto2",
+            "icon": "icons/components/icon_10_finais_texto2.svg",
+            "label": "css_10_finais_texto2",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_texto3",
+            "icon": "icons/components/icon_10_finais_texto3.svg",
+            "label": "css_10_finais_texto3",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_titulo1",
+            "icon": "icons/components/icon_10_finais_titulo1.svg",
+            "label": "css_10_finais_titulo1",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_titulo2",
+            "icon": "icons/components/icon_10_finais_titulo2.svg",
+            "label": "css_10_finais_titulo2",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_titulo3",
+            "icon": "icons/components/icon_10_finais_titulo3.svg",
+            "label": "css_10_finais_titulo3",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_10_finais_titulo4",
+            "icon": "icons/components/icon_10_finais_titulo4.svg",
+            "label": "css_10_finais_titulo4",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "container",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "label": {
+                "key": "COMPONENT_CONTAINER_LABEL"
+            },
+            "properties": [
+                "style",
+                "position",
+                "background-color"
+            ]
+        },
         {
             "name": "product",
             "icon": "icons/components/product.svg",
-            "label": { "key": "COMPONENT_PRODUCT_LABEL" },
-            "properties": ["position", "style", "text-align", "letter-spacing", "line-height"]
+            "label": {
+                "key": "COMPONENT_PRODUCT_LABEL"
+            },
+            "properties": [
+                "position",
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "product_title": {
+                    "stripStylingOnPaste": true
+                },
+                "description": {
+                    "stripStylingOnPaste": true
+                },
+                "price": {
+                    "stripStylingOnPaste": true
+                },
+                "link": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
         {
             "name": "image",
             "icon": "icons/components/image.svg",
-            "label": { "key": "COMPONENT_IMAGE_LABEL" },
+            "label": {
+                "key": "COMPONENT_IMAGE_LABEL"
+            },
             "properties": [
-                { "name": "fitting", "defaultValue": "_fit-frame-height-to-content" },
+                {
+                    "name": "fitting",
+                    "defaultValue": "_fit-frame-height-to-content"
+                },
                 "position",
                 "style",
                 "inside-caption",
                 "text-align",
                 "letter-spacing",
                 "line-height",
-                { "name": "edit-image", "directiveKey": "image" },
-                { "name": "hyperlink", "directiveKey": "hyperlink" }
+                {
+                    "name": "edit-image",
+                    "directiveKey": "image"
+                },
+                {
+                    "name": "hyperlink",
+                    "directiveKey": "hyperlink"
+                }
             ],
             "directiveOptions": {
                 "caption": {
                     "autofill": {
                         "source": "image",
                         "metadataField": "ContentMetaData/Description"
-                    }
+                    },
+                    "stripStylingOnPaste": true
+                },
+                "credit": {
+                    "autofill": {
+                        "source": "image",
+                        "metadataField": "ContentMetaData/Description"
+                    },
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "image_phases",
+            "icon": "icons/components/image.svg",
+            "label": {
+                "key": "COMPONENT_IMAGE2_LABEL"
+            },
+            "properties": [
+                "position",
+                "width",
+                "style",
+                "inside-caption",
+                "text-align",
+                "letter-spacing",
+                "line-height",
+                {
+                    "name": "edit-image",
+                    "directiveKey": "image"
+                }
+            ],
+            "directiveOptions": {
+                "caption": {
+                    "autofill": {
+                        "source": "image",
+                        "metadataField": "ContentMetaData/Description"
+                    },
+                    "stripStylingOnPaste": true
+                },
+                "credit": {
+                    "autofill": {
+                        "source": "image",
+                        "metadataField": "ContentMetaData/Description"
+                    },
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "image2",
+            "icon": "icons/components/image.svg",
+            "label": {
+                "key": "COMPONENT_IMAGE_LABEL"
+            },
+            "properties": [
+                "position",
+                "style",
+                "style_image",
+                "inside-caption",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "caption": {
+                    "autofill": {
+                        "source": "image2",
+                        "metadataField": "ContentMetaData/Description"
+                    },
+                    "stripStylingOnPaste": true
+                },
+                "credit": {
+                    "autofill": {
+                        "source": "image2",
+                        "metadataField": "ContentMetaData/Description"
+                    },
+                    "stripStylingOnPaste": true
                 }
             }
         },
@@ -905,16 +2783,36 @@
             "name": "embed",
             "icon": "icons/components/embed.svg",
             "selectionMethod": "handle",
-            "label": { "key": "COMPONENT_EMBED_LABEL" },
-            "properties": ["style", { "name": "embed-code", "directiveKey": "html" }]
+            "label": {
+                "key": "COMPONENT_EMBED_LABEL"
+            },
+            "properties": [
+                "style",
+                {
+                    "name": "embed-code",
+                    "directiveKey": "html"
+                }
+            ]
         },
         {
             "name": "slideshow",
             "icon": "icons/components/slideshow.svg",
-            "label": { "key": "COMPONENT_SLIDESHOW_LABEL" },
+            "label": {
+                "key": "COMPONENT_SLIDESHOW_LABEL"
+            },
             "properties": [
-                { "name": "slides", "directiveKey": "slideshow" },
-                { "control": { "type": "header" }, "label": { "key": "COMPONENT_SLIDESHOW_PROPERTIES_HEADER_LABEL" } },
+                {
+                    "name": "slides",
+                    "directiveKey": "slideshow"
+                },
+                {
+                    "control": {
+                        "type": "header"
+                    },
+                    "label": {
+                        "key": "COMPONENT_SLIDESHOW_PROPERTIES_HEADER_LABEL"
+                    }
+                },
                 "fitting",
                 "slideshow-inside-caption",
                 "slideshow-play-orientation",
@@ -926,114 +2824,534 @@
                 "line-height"
             ],
             "restrictChildren": {
-                "image": { "withContent": "image" }
+                "image": {
+                    "withContent": "image"
+                }
             }
-        },
-        {
-            "name": "author",
-            "icon": "icons/components/author.svg",
-            "label": { "key": "COMPONENT_AUTHOR_LABEL" },
-            "properties": [
-                "style",
-                "text-align",
-                "letter-spacing",
-                "line-height",
-                { "name": "hyperlink", "directiveKey": "link-url" }
-            ]
         },
         {
             "name": "crosshead",
             "icon": "icons/components/crosshead.svg",
-            "label": { "key": "COMPONENT_CROSSHEAD_LABEL" },
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": {
+                "key": "COMPONENT_CROSSHEAD_LABEL"
+            },
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
         {
             "name": "footer",
             "icon": "icons/components/footer.svg",
-            "label": { "key": "COMPONENT_FOOTER_LABEL" },
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": {
+                "key": "COMPONENT_FOOTER_LABEL"
+            },
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
         {
             "name": "intro",
             "icon": "icons/components/intro.svg",
-            "label": { "key": "COMPONENT_INTRO_LABEL" },
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": {
+                "key": "COMPONENT_INTRO_LABEL"
+            },
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
         {
             "name": "quote",
             "icon": "icons/components/quote.svg",
-            "label": { "key": "COMPONENT_QUOTE_LABEL" },
-            "properties": ["position", "style", "text-align", "letter-spacing", "line-height"]
+            "label": {
+                "key": "COMPONENT_QUOTE_LABEL"
+            },
+            "properties": [
+                "position",
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                },
+                "author": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
         {
             "name": "headline",
             "icon": "icons/components/headline.svg",
-            "label": { "key": "COMPONENT_HEADLINE_LABEL" },
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": {
+                "key": "COMPONENT_HEADLINE_LABEL"
+            },
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "section": {
+                    "stripStylingOnPaste": true
+                },
+                "text": {
+                    "stripStylingOnPaste": true
+                },
+                "subtitle": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
         {
             "name": "separator",
             "icon": "icons/components/separator.svg",
-            "label": { "key": "COMPONENT_SEPARATOR_LABEL" },
-            "properties": ["style"]
+            "label": {
+                "key": "COMPONENT_SEPARATOR_LABEL"
+            },
+            "properties": [
+                "style"
+            ]
         },
         {
             "name": "hero",
             "icon": "icons/components/hero.svg",
-            "label": { "key": "COMPONENT_HERO_LABEL" },
+            "label": {
+                "key": "COMPONENT_HERO_LABEL"
+            },
             "allowNesting": "no",
             "properties": [
                 "fixed-background",
                 "style",
-                { "name": "text-align", "defaultValue": "_align-middle" },
+                {
+                    "name": "text-align",
+                    "defaultValue": "_align-middle"
+                },
                 "letter-spacing",
                 "line-height",
-                { "name": "edit-image", "directiveKey": "image" }
-            ]
+                {
+                    "name": "edit-image",
+                    "directiveKey": "image"
+                }
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                },
+                "subtitle": {
+                    "stripStylingOnPaste": true
+                },
+                "author": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
         {
             "name": "subtitle",
             "icon": "icons/components/subtitle.svg",
-            "label": { "key": "COMPONENT_SUBTITLE_LABEL" },
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": {
+                "key": "COMPONENT_SUBTITLE_LABEL"
+            },
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "title": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
         {
             "name": "title",
             "icon": "icons/components/title.svg",
-            "label": { "key": "COMPONENT_TITLE_LABEL" },
-            "properties": ["style", "text-align", "letter-spacing", "line-height"]
+            "label": {
+                "key": "COMPONENT_TITLE_LABEL"
+            },
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
         },
         {
             "name": "social-media",
             "icon": "icons/components/social-media.svg",
-            "label": { "key": "COMPONENT_SOCIAL_MEDIA_LABEL" },
+            "label": {
+                "key": "COMPONENT_SOCIAL_MEDIA_LABEL"
+            },
             "selectionMethod": "handle",
-            "properties": [{ "name": "social-media-properties", "directiveKey": "media" }, "position", "style"]
+            "properties": [
+                {
+                    "name": "social-media-properties",
+                    "directiveKey": "media"
+                },
+                "position",
+                "style"
+            ]
         },
         {
             "name": "video",
             "icon": "icons/components/video.svg",
-            "label": { "key": "COMPONENT_VIDEO_LABEL" },
+            "label": {
+                "key": "COMPONENT_VIDEO_LABEL"
+            },
             "selectionMethod": "handle",
-            "properties": [{ "name": "video-properties", "directiveKey": "media" }, "style"]
+            "properties": [
+                {
+                    "name": "video-properties",
+                    "directiveKey": "media"
+                },
+                "style"
+            ]
+        },
+        {
+            "name": "background",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "label": "Background Livro",
+            "properties": [
+                "style"
+            ]
+        },
+        {
+            "name": "container_video",
+            "icon": "icons/components/video.svg",
+            "label": "VIDEO_POPUP_CENTER",
+            "selectionMethod": "handle",
+            "properties": [
+                {
+                    "name": "fitting",
+                    "defaultValue": "_fit-frame-to-content"
+                },
+                "position",
+                "style",
+                {
+                    "name": "embed-code",
+                    "directiveKey": "html"
+                },
+                "inside-caption",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
+        {
+            "name": "slideshow_2_images",
+            "icon": "icons/components/slideshow.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "label": "Slideshow 2 Imagens",
+            "properties": [
+                "style_lumen_mais",
+                "position",
+                "background-color"
+            ],
+            "restrictChildren": {
+                "slideshow_img": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Imagens",
+                            "name": "Imagens",
+                            "components": [
+                                "slideshow_img"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "slideshow_3_images",
+            "icon": "icons/components/slideshow.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "label": "Slideshow 3 Imagens",
+            "properties": [
+                "style_lumen_mais",
+                "position",
+                "background-color"
+            ],
+            "restrictChildren": {
+                "slideshow_img": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Imagens",
+                            "name": "Imagens",
+                            "components": [
+                                "slideshow_img"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "slideshow_4_images",
+            "icon": "icons/components/slideshow.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "label": "Slideshow 4 Imagens",
+            "properties": [
+                "style_lumen_mais",
+                "position",
+                "background-color"
+            ],
+            "restrictChildren": {
+                "slideshow_img": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Imagens",
+                            "name": "Imagens",
+                            "components": [
+                                "slideshow_img"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "slideshow_5_images",
+            "icon": "icons/components/slideshow.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "one-level",
+            "label": "Slideshow 5 Imagens",
+            "properties": [
+                "style_lumen_mais",
+                "position",
+                "background-color"
+            ],
+            "restrictChildren": {
+                "slideshow_img": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Imagens",
+                            "name": "Imagens",
+                            "components": [
+                                "slideshow_img"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "slideshow_6_images",
+            "icon": "icons/components/slideshow.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "one-level",
+            "label": "Slideshow 6 Imagens",
+            "properties": [
+                "style_lumen_mais",
+                "position",
+                "background-color"
+            ],
+            "restrictChildren": {
+                "slideshow_img": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Imagens",
+                            "name": "Imagens",
+                            "components": [
+                                "slideshow_img"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "slideshow_7_images",
+            "icon": "icons/components/slideshow.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "one-level",
+            "label": "Slideshow 7 Imagens",
+            "properties": [
+                "style_lumen_mais",
+                "position",
+                "background-color"
+            ],
+            "restrictChildren": {
+                "slideshow_img": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Imagens",
+                            "name": "Imagens",
+                            "components": [
+                                "slideshow_img"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "slideshow_8_images",
+            "icon": "icons/components/slideshow.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "one-level",
+            "label": "Slideshow 8 Imagens",
+            "properties": [
+                "style_lumen_mais",
+                "position",
+                "background-color"
+            ],
+            "restrictChildren": {
+                "slideshow_img": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Imagens",
+                            "name": "Imagens",
+                            "components": [
+                                "slideshow_img"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "slideshow_9_images",
+            "icon": "icons/components/slideshow.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "one-level",
+            "label": "Slideshow 9 Imagens",
+            "properties": [
+                "style_lumen_mais",
+                "position",
+                "background-color"
+            ],
+            "restrictChildren": {
+                "slideshow_img": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Imagens",
+                            "name": "Imagens",
+                            "components": [
+                                "slideshow_img"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "slideshow_img",
+            "icon": "icons/components/slideshow.svg",
+            "label": "Imagem",
+            "properties": [
+                "fitting",
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "restrictChildren": {
+                "image": {
+                    "withContent": "image"
+                }
+            }
         }
     ],
-
     "groups": [
-
+        {
+            "label": "Questões",
+            "name": "questoes",
+            "components": [
+                "container_grupo_checkbox",
+                "container_grupo_checkbox_lado_a_lado",
+                "container_grupo_radio_linha",
+                "container_grupo_radio_lado_a_lado"
+            ]
+        },
+        {
+            "label": "Containers",
+            "name": "containers",
+            "components": [
+                "background",
+                "container_read_more",
+                "container_fica_a_dica",
+                "container_repertorio_cultural",
+                "container_saiba_mais"
+            ]
+        },
+        {
+            "label": "Lingua_Inglesa",
+            "name": "lingua_inglesa",
+            "components": []
+        },
         {
             "label": "00 codigos e recados",
             "name": "00_codigos_e_recados",
             "components": [
-                "css_00_arte", 
-                "css_00_cartografia", 
-                "css_00_ilustracao", 
-                "css_00_licenciamento_texto_terceiro", 
-                "css_00_multimidia", 
+                "css_00_arte",
+                "css_00_cartografia",
+                "css_00_ilustracao",
+                "css_00_licenciamento_texto_terceiro",
+                "css_00_multimidia",
                 "css_00_revisao"
             ]
         },
-
         {
             "label": "01 aberturas e titulos",
             "name": "01_aberturas_e_titulos",
@@ -1049,14 +3367,15 @@
                 "css_01_titulo4"
             ]
         },
-
         {
-            "label": "02 texto geral",
+            "label": "02 Texto geral",
             "name": "02_texto_geral",
             "components": [
                 "css_02_texto_bullet",
+                "css_02_texto_bullet_item_texto",
                 "css_02_texto_citado_fonte",
-                "css_02_texto_citado_titulo",
+                "css_02_texto_citado_titulo1",
+                "css_02_texto_citado_titulo2",
                 "css_02_texto_citado",
                 "css_02_texto_definicao",
                 "css_02_texto_destaque",
@@ -1070,20 +3389,20 @@
                 "css_02_texto_vocabulario"
             ]
         },
-
         {
             "label": "03 exercicios",
             "name": "03_exercicios",
             "components": [
-                "css_03_exercicio_alternativa",
+                "css_03_2exercicio_bullet",
+                "css_03_2exercicio_container_edit",
+                "css_03_2exercicio_enunciado",
+                "css_03_2exercicio_continuacao",
+                "css_03_2exercicio_alternativa",
+                "css_03_2exercicio_alternativa_edit",
                 "css_03_exercicio_bullet",
                 "css_03_exercicio_citado_titulo",
                 "css_03_exercicio_citado",
-                "css_03_exercicio_continuacao",
-                "css_03_exercicio_enunciado",
-                "css_03_exercicio_item_romano",
                 "css_03_exercicio_item_vf",
-                "css_03_exercicio_item",
                 "css_03_exercicio_resolvido_bullet",
                 "css_03_exercicio_resolvido_item",
                 "css_03_exercicio_resolvido",
@@ -1102,7 +3421,6 @@
                 "css_04_proposta_didatica"
             ]
         },
-
         {
             "label": "05 diversos",
             "name": "05_diversos",
@@ -1128,20 +3446,11 @@
             "name": "06_boxes",
             "components": [
                 "css_06_boxe_bullet",
-                "css_06_boxe_exercicio_continuacao",
-                "css_06_boxe_exercicio",
-                "css_06_boxe_item",
-                "css_06_boxe_texto_citado",
-                "css_06_boxe_texto1",
-                "css_06_boxe_texto2",
-                "css_06_boxe_texto3",
-                "css_06_boxe_titulo_texto_citado",
-                "css_06_boxe_titulo1",
-                "css_06_boxe_titulo2",
-                "css_06_boxe_titulo3"
+                "css_06_boxe_peso1",
+                "css_06_boxe_peso2",
+                "css_06_boxe_peso3"
             ]
         },
-
         {
             "label": "07 secoes",
             "name": "07_secoes",
@@ -1164,7 +3473,6 @@
                 "css_07_secao_titulo4"
             ]
         },
-
         {
             "label": "08 tabelas",
             "name": "08_tabelas",
@@ -1178,7 +3486,6 @@
                 "css_08_tabela_titulo"
             ]
         },
-
         {
             "label": "09 iniciais",
             "name": "09_iniciais",
@@ -1191,7 +3498,6 @@
                 "css_09_iniciais_texto2"
             ]
         },
-
         {
             "label": "10 finais",
             "name": "10_finais",
@@ -1210,45 +3516,89 @@
                 "css_10_finais_titulo4"
             ]
         },
-
         {
-            "label": { "key": "GROUP_TITLE_LABEL" },
+            "label": {
+                "key": "GROUP_TITLE_LABEL"
+            },
             "name": "title",
-            "components": ["title", "subtitle", "headline", "hero"]
+            "components": [
+                "subtitle",
+                "headline",
+                "hero"
+            ]
         },
         {
-            "label": { "key": "GROUP_TEXT_LABEL" },
+            "label": {
+                "key": "GROUP_TEXT_LABEL"
+            },
             "name": "text",
-            "components": ["intro", "body", "footer", "quote", "separator", "crosshead", "author"]
+            "components": [
+                "intro",
+                "body",
+                "footer",
+                "quote",
+                "separator",
+                "crosshead",
+                "author"
+            ]
         },
         {
-            "label": { "key": "GROUP_MEDIA_LABEL" },
+            "label": {
+                "key": "GROUP_MEDIA_LABEL"
+            },
             "name": "media",
-            "components": ["slideshow", "image", "embed", "product", "social-media", "video"]
+            "components": [
+                "image",
+                "image_phases",
+                "embed",
+                "product",
+                "social-media",
+                "container_video",
+                "audio",
+                "slideshow_2_images",
+                "slideshow_3_images",
+                "slideshow_4_images"
+            ]
         },
         {
-            "label": { "key": "GROUP_LAYOUT_LABEL" },
-            "name": "containers",
-            "components": ["container", "container_nivel1", "container_nivel2", "container_nivel3", "container_questao" ]
+            "label": {
+                "key": "GROUP_LAYOUT_LABEL"
+            },
+            "name": "layout",
+            "components": [
+                "container",
+                "container_nivel1",
+                "container_nivel2",
+                "container_nivel3",
+                "container_questao",
+                "container_faixa"
+            ]
         }
     ],
-
     "componentProperties": [
         {
             "name": "position",
-            "label": { "key": "PROPERTY_POSITION_LABEL" },
+            "label": {
+                "key": "PROPERTY_POSITION_LABEL"
+            },
             "control": {
                 "type": "select",
                 "options": [
                     {
-                        "caption": { "key": "PROPERTY_POSITION_MIDDLE_OPTION" }
+                        "caption": {
+                            "key": "PROPERTY_POSITION_MIDDLE_OPTION"
+                        }
                     },
                     {
-                        "caption": { "key": "PROPERTY_POSITION_LEFT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_POSITION_LEFT_OPTION"
+                        },
                         "value": "_left"
                     },
                     {
-                        "caption": { "key": "PROPERTY_POSITION_RIGHT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_POSITION_RIGHT_OPTION"
+                        },
                         "value": "_right"
                     }
                 ]
@@ -1257,27 +3607,53 @@
         },
         {
             "name": "letter-spacing",
-            "label": { "key": "PROPERTY_LETTER_SPACING_LABEL" },
+            "label": {
+                "key": "PROPERTY_LETTER_SPACING_LABEL"
+            },
             "control": {
                 "type": "text",
                 "pattern": "^(([+-]{0,1})([0-9]|[0-9][.][0-9]{1,}|[0-9]{2}|[0-9]{2}[.][0-9]{1,}|[1-4][0-9]{0,2}|[1-4][0-9]{0,2}[.][0-9]{1,}|(500))|auto)$",
                 "defaultValue": "",
                 "unit": "em",
-                "inputPlaceholder": { "key": "PROPERTY_AUTO_NUMBER_PLACEHOLDER" }
+                "inputPlaceholder": {
+                    "key": "PROPERTY_AUTO_NUMBER_PLACEHOLDER"
+                }
             },
             "selector": "[doc-editable]",
             "dataType": "inlineStyles",
             "featureFlag": "ContentStation-LocalStyleOverrides"
         },
         {
+            "name": "width",
+            "label": {
+                "key": "PROPERTY_IMAGE_HEIGHT_LABEL"
+            },
+            "control": {
+                "type": "text",
+                "pattern": "^(([+-]{0,1})([0-9]|[0-9][.][0-9]{1,}|[0-9]{2}|[0-9]{2}[.][0-9]{1,}|[1-4][0-9]{0,2}|[1-4][0-9]{0,2}[.][0-9]{1,}|(500))|auto)$",
+                "defaultValue": "",
+                "unit": "px",
+                "inputPlaceholder": {
+                    "key": "PROPERTY_AUTO_NUMBER_PLACEHOLDER"
+                }
+            },
+            "selector": "[img-width]",
+            "dataType": "inlineStyles",
+            "featureFlag": "ContentStation-LocalStyleOverrides"
+        },
+        {
             "name": "line-height",
-            "label": { "key": "PROPERTY_LINE_HEIGHT_LABEL" },
+            "label": {
+                "key": "PROPERTY_LINE_HEIGHT_LABEL"
+            },
             "control": {
                 "type": "text",
                 "pattern": "^(([+]{0,1})([0-9]|[0-9][.][0-9]{1,}|[1-9]{2}|[1-9]{2}[.][0-9]{1,}|[1-4][0-9]{0,2}|[1-4][0-9]{0,2}[.][0-9]{1,}|(500))|auto)$",
                 "defaultValue": "",
                 "unit": "em",
-                "inputPlaceholder": { "key": "PROPERTY_AUTO_NUMBER_PLACEHOLDER" }
+                "inputPlaceholder": {
+                    "key": "PROPERTY_AUTO_NUMBER_PLACEHOLDER"
+                }
             },
             "selector": "[doc-editable]",
             "dataType": "inlineStyles",
@@ -1285,39 +3661,57 @@
         },
         {
             "name": "inside-caption",
-            "label": { "key": "PROPERTY_CAPTION_LABEL" },
+            "label": {
+                "key": "PROPERTY_CAPTION_LABEL"
+            },
             "control": {
                 "type": "select",
                 "options": [
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_OUTSIDE_OPTION" }
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_OUTSIDE_OPTION"
+                        }
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_NONE_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_NONE_OPTION"
+                        },
                         "value": "_caption-none"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_BOTTOM_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_BOTTOM_OPTION"
+                        },
                         "value": "_caption-inside"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_TOP_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_TOP_OPTION"
+                        },
                         "value": "_caption-top"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_TOP_LEFT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_TOP_LEFT_OPTION"
+                        },
                         "value": "_caption-top-left"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_TOP_RIGHT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_TOP_RIGHT_OPTION"
+                        },
                         "value": "_caption-top-right"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_BOTTOM_LEFT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_BOTTOM_LEFT_OPTION"
+                        },
                         "value": "_caption-bottom-left"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_BOTTOM_RIGHT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_BOTTOM_RIGHT_OPTION"
+                        },
                         "value": "_caption-bottom-right"
                     }
                 ]
@@ -1326,7 +3720,9 @@
         },
         {
             "name": "fixed-background",
-            "label": { "key": "PROPERTY_FIXED_BACKGROUND_LABEL" },
+            "label": {
+                "key": "PROPERTY_FIXED_BACKGROUND_LABEL"
+            },
             "control": {
                 "type": "checkbox",
                 "value": "_fixed-background"
@@ -1335,7 +3731,9 @@
         },
         {
             "name": "drop-capital",
-            "label": { "key": "PROPERTY_DROP_CAP_LABEL" },
+            "label": {
+                "key": "PROPERTY_DROP_CAP_LABEL"
+            },
             "control": {
                 "type": "drop-capital",
                 "charactersMinimum": 1,
@@ -1350,21 +3748,29 @@
         },
         {
             "name": "text-align",
-            "label": { "key": "PROPERTY_TEXT_ALIGN_LABEL" },
+            "label": {
+                "key": "PROPERTY_TEXT_ALIGN_LABEL"
+            },
             "control": {
                 "type": "radio",
                 "options": [
                     {
-                        "caption": { "key": "PROPERTY_POSITION_LEFT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_POSITION_LEFT_OPTION"
+                        },
                         "icon": "icons/properties/text-align-left.svg"
                     },
                     {
-                        "caption": { "key": "PROPERTY_POSITION_MIDDLE_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_POSITION_MIDDLE_OPTION"
+                        },
                         "icon": "icons/properties/text-align-middle.svg",
                         "value": "_align-middle"
                     },
                     {
-                        "caption": { "key": "PROPERTY_POSITION_RIGHT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_POSITION_RIGHT_OPTION"
+                        },
                         "icon": "icons/properties/text-align-right.svg",
                         "value": "_align-right"
                     }
@@ -1375,127 +3781,744 @@
         },
         {
             "name": "style",
-            "label": { "key": "PROPERTY_VARIANT_LABEL" },
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL"
+            },
             "control": {
                 "type": "select",
                 "options": [
-
                     {
-                        "caption": { "key": "PROPERTY_STYLE_DEFAULT_OPTION" }
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
                     },
-
                     {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "artes" } },
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "artes"
+                            }
+                        },
                         "value": "artes"
                     },
-
                     {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "biologia" } },
-                        "value": "biologia"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "ciencias" } },
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "ciencias"
+                            }
+                        },
                         "value": "ciencias"
                     },
-
                     {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "educacao_fisica" } },
-                        "value": "educacao_fisica"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "filosofia" } },
-                        "value": "filosofia"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "fisica" } },
-                        "value": "fisica"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "geografia" } },
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "geografia"
+                            }
+                        },
                         "value": "geografia"
                     },
-
                     {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "gramatica" } },
-                        "value": "gramatica"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "historia" } },
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "historia"
+                            }
+                        },
                         "value": "historia"
                     },
-
                     {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "integrado" } },
-                        "value": "integrado"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "inter_de_texto" } },
-                        "value": "inter_de_texto"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "lingua_espanhola" } },
-                        "value": "lingua_espanhola"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "lingua_inglesa" } },
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "lingua_inglesa"
+                            }
+                        },
                         "value": "lingua_inglesa"
                     },
-
                     {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "lingua_portuguesa" } },
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "lingua_portuguesa"
+                            }
+                        },
                         "value": "lingua_portuguesa"
                     },
-
                     {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "linguagens" } },
-                        "value": "linguagens"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "literatura" } },
-                        "value": "literatura"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "matematica" } },
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "matematica"
+                            }
+                        },
                         "value": "matematica"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "musica" } },
-                        "value": "musica"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "producao_de_texto" } },
-                        "value": "producao_de_texto"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "quimica" } },
-                        "value": "quimica"
-                    },
-
-                    {
-                        "caption": { "key": "PROPERTY_VARIANT_STYLE_OPTION", "values": { "0": "sociologia" } },
-                        "value": "sociologia"
                     }
-
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_boxes",
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL_BOXES"
+            },
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "aplicando_ciencia"
+                            }
+                        },
+                        "value": "aplicando_ciencia"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "brincadeira"
+                            }
+                        },
+                        "value": "brincadeira"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "conheca_artista"
+                            }
+                        },
+                        "value": "conheca_artista"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "familia_escola"
+                            }
+                        },
+                        "value": "familia_escola"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "get_ready"
+                            }
+                        },
+                        "value": "get_ready"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "mapeando"
+                            }
+                        },
+                        "value": "mapeando"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "palavra_texto"
+                            }
+                        },
+                        "value": "palavra_texto"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "reading_time"
+                            }
+                        },
+                        "value": "reading_time"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "saber_mais"
+                            }
+                        },
+                        "value": "saber_mais"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "sticker_time"
+                            }
+                        },
+                        "value": "sticker_time"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "thinking_time"
+                            }
+                        },
+                        "value": "thinking_time"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "voce_sabia"
+                            }
+                        },
+                        "value": "voce_sabia"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_07_secao",
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL"
+            },
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Seção 01"
+                            }
+                        },
+                        "value": "secao_01"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Seção 02"
+                            }
+                        },
+                        "value": "secao_02"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Seção 03"
+                            }
+                        },
+                        "value": "secao_03"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Seção 04"
+                            }
+                        },
+                        "value": "secao_04"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Seção 05"
+                            }
+                        },
+                        "value": "secao_05"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "styles-type-list",
+            "label": "Escolha o tipo de lista",
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Itens"
+                            }
+                        },
+                        "value": "itens"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Itens Romano"
+                            }
+                        },
+                        "value": "item_romano_itens"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Alternativa Assinalar"
+                            }
+                        },
+                        "value": "alternativa_assinalar_itens"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_section",
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL_SECTION"
+            },
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "atividades_complementares"
+                            }
+                        },
+                        "value": "atividades_complementares"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "caracterizando"
+                            }
+                        },
+                        "value": "caracterizando"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "closing_up"
+                            }
+                        },
+                        "value": "closing_up"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "conecte_assunto"
+                            }
+                        },
+                        "value": "conecte_assunto"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "construindo_conhecimentos"
+                            }
+                        },
+                        "value": "construindo_conhecimentos"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "criando_arte"
+                            }
+                        },
+                        "value": "criando_arte"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "genero_textual"
+                            }
+                        },
+                        "value": "genero_textual"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "ideias_construcao"
+                            }
+                        },
+                        "value": "ideias_construcao"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "interacao"
+                            }
+                        },
+                        "value": "interacao"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "leitura_inicial"
+                            }
+                        },
+                        "value": "leitura_inicial"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "lessons"
+                            }
+                        },
+                        "value": "lessons"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "maos_obra"
+                            }
+                        },
+                        "value": "maos_obra"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "mapeando"
+                            }
+                        },
+                        "value": "mapeando"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "matematica_dia"
+                            }
+                        },
+                        "value": "matematica_dia"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "oque_aprendi"
+                            }
+                        },
+                        "value": "oque_aprendi"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "vamos_descobrir"
+                            }
+                        },
+                        "value": "vamos_descobrir"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "voce_historiador"
+                            }
+                        },
+                        "value": "voce_historiador"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_lumen_mais",
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL"
+            },
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Artes"
+                            }
+                        },
+                        "value": "artes"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "200"
+                            }
+                        },
+                        "value": "lingua_inglesa"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Língua Portuguesa"
+                            }
+                        },
+                        "value": "lingua_portuguesa"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Matemática"
+                            }
+                        },
+                        "value": "matematica"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_modelo_peso",
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL"
+            },
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "modelo_01"
+                            }
+                        },
+                        "value": "modelo_01"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "modelo_02"
+                            }
+                        },
+                        "value": "modelo_02"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "modelo_03"
+                            }
+                        },
+                        "value": "modelo_03"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_box_00",
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL"
+            },
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Azul(box_04)"
+                            }
+                        },
+                        "value": "box_azul"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Laranja(box_05)"
+                            }
+                        },
+                        "value": "box_laranja"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Verde(box_06)"
+                            }
+                        },
+                        "value": "box_verde"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Cinza(box_07)"
+                            }
+                        },
+                        "value": "box_cinza"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Amarelo(box_08)"
+                            }
+                        },
+                        "value": "box_amarelo"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Ciano(box_09)"
+                            }
+                        },
+                        "value": "box_ciano"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_lessons",
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL_LESSONS"
+            },
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Lesson A"
+                            }
+                        },
+                        "value": "lesson_A"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Lesson B"
+                            }
+                        },
+                        "value": "lesson_B"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Lesson C"
+                            }
+                        },
+                        "value": "lesson_C"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Lesson D"
+                            }
+                        },
+                        "value": "lesson_D"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_image",
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL_IMAGE"
+            },
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "100"
+                            }
+                        },
+                        "value": "_100"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "200"
+                            }
+                        },
+                        "value": "_200"
+                    }
                 ]
             },
             "dataType": "styles"
         },
         {
             "name": "fitting",
-            "label": { "key": "PROPERTY_FITTING_LABEL" },
+            "label": {
+                "key": "PROPERTY_FITTING_LABEL"
+            },
             "control": {
                 "type": "fitting"
             },
@@ -1503,39 +4526,57 @@
         },
         {
             "name": "slideshow-inside-caption",
-            "label": { "key": "PROPERTY_CAPTION_LABEL" },
+            "label": {
+                "key": "PROPERTY_CAPTION_LABEL"
+            },
             "control": {
                 "type": "select",
                 "options": [
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_OUTSIDE_OPTION" }
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_OUTSIDE_OPTION"
+                        }
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_NONE_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_NONE_OPTION"
+                        },
                         "value": "_caption-none"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_BOTTOM_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_BOTTOM_OPTION"
+                        },
                         "value": "_caption-inside"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_TOP_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_TOP_OPTION"
+                        },
                         "value": "_caption-top"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_TOP_LEFT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_TOP_LEFT_OPTION"
+                        },
                         "value": "_caption-top-left"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_TOP_RIGHT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_TOP_RIGHT_OPTION"
+                        },
                         "value": "_caption-top-right"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_BOTTOM_LEFT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_BOTTOM_LEFT_OPTION"
+                        },
                         "value": "_caption-bottom-left"
                     },
                     {
-                        "caption": { "key": "PROPERTY_CAPTION_BOTTOM_RIGHT_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_CAPTION_BOTTOM_RIGHT_OPTION"
+                        },
                         "value": "_caption-bottom-right"
                     }
                 ]
@@ -1544,15 +4585,21 @@
         },
         {
             "name": "slideshow-play-orientation",
-            "label": { "key": "PROPERTY_PLAY_ORIENTATION_LABEL" },
+            "label": {
+                "key": "PROPERTY_PLAY_ORIENTATION_LABEL"
+            },
             "control": {
                 "type": "select",
                 "options": [
                     {
-                        "caption": { "key": "PROPERTY_PLAY_ORIENTATION_HORIZONTAL_OPTION" }
+                        "caption": {
+                            "key": "PROPERTY_PLAY_ORIENTATION_HORIZONTAL_OPTION"
+                        }
                     },
                     {
-                        "caption": { "key": "PROPERTY_PLAY_ORIENTATION_VERTICAL_OPTION" },
+                        "caption": {
+                            "key": "PROPERTY_PLAY_ORIENTATION_VERTICAL_OPTION"
+                        },
                         "value": "_vertical"
                     }
                 ]
@@ -1561,7 +4608,9 @@
         },
         {
             "name": "slideshow-autoplay",
-            "label": { "key": "PROPERTY_AUTO_PLAY_LABEL" },
+            "label": {
+                "key": "PROPERTY_AUTO_PLAY_LABEL"
+            },
             "control": {
                 "type": "checkbox",
                 "value": "_auto-play"
@@ -1570,7 +4619,9 @@
         },
         {
             "name": "slideshow-filmstrip",
-            "label": { "key": "PROPERTY_SHOW_FILMSTRIP_LABEL" },
+            "label": {
+                "key": "PROPERTY_SHOW_FILMSTRIP_LABEL"
+            },
             "control": {
                 "type": "checkbox",
                 "value": "_filmstrip"
@@ -1579,7 +4630,9 @@
         },
         {
             "name": "background-color",
-            "label": { "key": "PROPERTY_BACKGROUND_COLOR_LABEL" },
+            "label": {
+                "key": "PROPERTY_BACKGROUND_COLOR_LABEL"
+            },
             "control": {
                 "type": "colorPicker",
                 "opacity": true
@@ -1588,16 +4641,19 @@
         },
         {
             "name": "edit-image",
-            "label": { "key": "PROPERTY_EDIT_IMAGE_LABEL" },
+            "label": {
+                "key": "PROPERTY_EDIT_IMAGE_LABEL"
+            },
             "control": {
-                "type": "image-editor",
-                "focuspoint": true
+                "type": "image-editor"
             },
             "dataType": "doc-image"
         },
         {
             "name": "social-media-properties",
-            "label": { "key": "PROPERTY_MEDIA_PROPERTIES_LABEL" },
+            "label": {
+                "key": "PROPERTY_MEDIA_PROPERTIES_LABEL"
+            },
             "control": {
                 "type": "media-properties",
                 "mediaType": "social"
@@ -1606,7 +4662,9 @@
         },
         {
             "name": "video-properties",
-            "label": { "key": "PROPERTY_MEDIA_PROPERTIES_LABEL" },
+            "label": {
+                "key": "PROPERTY_MEDIA_PROPERTIES_LABEL"
+            },
             "control": {
                 "type": "media-properties",
                 "mediaType": "video"
@@ -1615,33 +4673,44 @@
         },
         {
             "name": "slides",
-            "label": { "key": "PROPERTY_SLIDES_LABEL" },
+            "label": {
+                "key": "PROPERTY_SLIDES_LABEL"
+            },
             "control": {
                 "type": "slides",
-                "include": ["edit-image"]
+                "include": [
+                    "edit-image"
+                ]
             },
             "dataType": "doc-slideshow"
         },
         {
             "name": "embed-code",
-            "label": { "key": "PROPERTY_EMBED_CODE_LABEL" },
+            "label": {
+                "key": "PROPERTY_EMBED_CODE_LABEL"
+            },
             "control": {
                 "type": "textarea",
-                "inputPlaceholder": { "key": "PROPERTY_EMBED_CODE_PLACEHOLDER" }
+                "inputPlaceholder": {
+                    "key": "PROPERTY_EMBED_CODE_PLACEHOLDER"
+                }
             },
             "dataType": "doc-html"
         },
         {
             "name": "hyperlink",
-            "label": { "key": "PROPERTY_HYPERLINK_LABEL" },
+            "label": {
+                "key": "PROPERTY_HYPERLINK_LABEL"
+            },
             "control": {
                 "type": "url",
-                "inputPlaceholder": { "key": "PROPERTY_HYPERLINK_PLACEHOLDER" }
+                "inputPlaceholder": {
+                    "key": "PROPERTY_HYPERLINK_PLACEHOLDER"
+                }
             },
             "dataType": "doc-link"
         }
     ],
-
     "conversionRules": {
         "body": {
             "title": "auto",
@@ -1649,13 +4718,13 @@
             "headline": {
                 "type": "simple",
                 "map": {
-                    "title": "text"
+                    "text": "text"
                 }
             },
             "hero": {
                 "type": "simple",
                 "map": {
-                    "title": "text"
+                    "text": "text"
                 }
             },
             "intro": "auto",
@@ -1676,13 +4745,13 @@
             "headline": {
                 "type": "simple",
                 "map": {
-                    "title": "text"
+                    "text": "text"
                 }
             },
             "hero": {
                 "type": "simple",
                 "map": {
-                    "title": "text"
+                    "text": "text"
                 }
             },
             "intro": "auto",
@@ -1729,7 +4798,7 @@
             "hero": {
                 "type": "simple",
                 "map": {
-                    "title": "title",
+                    "text": "text",
                     "subtitle": "subtitle",
                     "author": "section"
                 }
@@ -1832,7 +4901,6 @@
             "product": "auto"
         }
     },
-
     "shortcuts": {
         "conversionComponents": [
             "product",
@@ -1847,6 +4915,7 @@
             "image"
         ]
     },
-
-    "scripts": ["scripts/vendor.js"]
+    "scripts": [
+        "scripts/vendor.js"
+    ]
 }

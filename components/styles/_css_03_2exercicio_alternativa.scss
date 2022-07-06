@@ -1,0 +1,319 @@
+.css_03_2exercicio_alternativa {
+  margin-top: 16px;
+  font-family: $fontName;
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: $fontName;
+  counter-reset: list;
+  padding-inline-start: 31px;
+
+  .group_alternativa :first-child {
+    margin-top: 0 !important;
+  }
+
+  &.item_romano_itens .css_03_2exercicio_alternativa_item {
+    &::before {
+      font-family: $fontName;
+      font-size: $fontName;
+      font-weight: 600;
+      color: #00ADA1;
+      counter-increment: list;
+      content: counter(list, lower-alpha) ")";
+      position: absolute;
+      left: -30px;
+    }
+  }
+
+  &.itens .css_03_2exercicio_alternativa_item {
+    &::before {
+      counter-increment: list;
+      content: counter(list, decimal) ".";
+      color: #00ADA1;
+    }
+  }
+
+  &.item_romano_itens .css_03_2exercicio_alternativa_item {
+    &::before {
+      counter-increment: list;
+      content: counter(list, upper-roman) ".";
+      color: #00ADA1;
+    }
+  }
+
+  &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
+    &::after {
+      font-family: $fontName;
+      font-size: 20px;
+      font-weight: 600;
+      content: "(";
+      position: absolute;
+      left: -32px;
+      color: #00ADA1;
+      top: 0;
+    }
+
+    &::before {
+      font-family: $fontName;
+      font-size: 20px;
+      font-weight: 600;
+      content: ")";
+      position: absolute;
+      left: -16px;
+      color: #00ADA1;
+    }
+  }
+
+  &.artes {
+    &.css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $art_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $art_cor2;
+      }
+    }
+
+    &.itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $art_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $art_cor2;
+      }
+    }
+
+    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
+      &::after {
+        color: $art_cor2;
+      }
+
+      &::before {
+        color: $art_cor2;
+      }
+    }
+  }
+
+  &.historia {
+    &.css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $his_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $his_cor2;
+      }
+    }
+
+    &.itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $his_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $his_cor2;
+      }
+    }
+
+    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
+      &::after {
+        color: $his_cor2;
+      }
+
+      &::before {
+        color: $his_cor2;
+      }
+    }
+  }
+
+  &.geografia {
+    &.css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $geo_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $geo_cor2;
+      }
+    }
+
+    &.itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $geo_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $geo_cor2;
+      }
+    }
+
+    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
+      &::after {
+        color: $geo_cor2;
+      }
+
+      &::before {
+        color: $geo_cor2;
+      }
+    }
+  }
+
+  &.ciencias {
+    &.css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $cie_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $cie_cor2;
+      }
+    }
+
+    &.itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $cie_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $cie_cor2;
+      }
+    }
+
+    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
+      &::after {
+        color: $cie_cor2;
+      }
+
+      &::before {
+        color: $cie_cor2;
+      }
+    }
+  }
+
+  &.lingua_inglesa {
+    &.css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $ing_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $ing_cor2;
+      }
+    }
+
+    &.itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $ing_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $ing_cor2;
+      }
+    }
+
+    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
+      &::after {
+        color: $ing_cor2;
+      }
+
+      &::before {
+        color: $ing_cor2;
+      }
+    }
+  }
+
+  &.lingua_portuguesa {
+    &.css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $por_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $por_cor2;
+      }
+    }
+
+    &.itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $por_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $por_cor2;
+      }
+    }
+
+    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
+      &::after {
+        color: $por_cor2;
+      }
+
+      &::before {
+        color: $por_cor2;
+      }
+    }
+  }
+
+  &.matematica {
+    &.css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $mat_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $mat_cor2;
+      }
+    }
+
+    &.itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $mat_cor2;
+      }
+    }
+
+    &.item_romano_itens .css_03_2exercicio_alternativa_item {
+      &::before {
+        color: $mat_cor2;
+      }
+    }
+
+    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
+      &::after {
+        color: $mat_cor2;
+      }
+
+      &::before {
+        color: $mat_cor2;
+      }
+    }
+  }
+
+
+}

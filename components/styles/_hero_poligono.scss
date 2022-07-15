@@ -1,0 +1,119 @@
+/* Hero component style.
+   A hero image is a large banner image, prominently placed on a web page, generally in the front and center.
+   http://en.wikipedia.org/wiki/Hero_image */
+.hero_poligono {
+    margin: 0px auto;
+    clear: both;
+    position: relative;
+
+    >figure {
+        margin: auto 50%;
+
+        >div {
+            margin-left: -50vw;
+            width: 100vw;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            overflow: hidden;
+
+            >div {
+                display: flex;
+                align-items: center;
+                height: 100vh;
+                max-width: $max-width;
+
+                &::after {
+                    content: ' ';
+                    display: block;
+                    clear: both;
+                }
+
+            }
+        }
+    }
+
+
+    .hero_headline {
+        width: 100%;
+        background: linear-gradient(90deg, rgb(253, 185, 19) 27%, rgb(237, 26, 59) 5%);
+        border-radius: 0 0 68px 0;
+        position: absolute;
+        top: 0;
+
+
+        .inner_hero {
+            max-width: 860px;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            align-items: center;
+            gap: 50px;
+            margin: auto;
+
+            .hero_capitulo_section {
+                background: #00ADA1;
+                border-radius: 50%;
+                position: relative;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 16px;
+                margin: 0;
+
+                &::before {
+                    content: 'unidade';
+                    font-family: $fontName;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    position: absolute;
+                    top: 0;
+                    text-align: center;
+                }
+
+                .hero_capitulo_section_num {
+                    font-family: $fontName;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 100px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }
+
+            .hero_poligono_titulo {
+                font-family: $fontName;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 52px;
+                color: #FFFFFF;
+                margin: 0;
+                text-align: left;
+            }
+
+
+        }
+    }
+
+
+    &._fixed-background {
+        >figure {
+            >div {
+                background-attachment: scroll;
+            }
+        }
+    }
+
+    &._js-fixed-scroll {
+        >figure {
+            >div {
+                background-attachment: scroll;
+            }
+        }
+    }
+}

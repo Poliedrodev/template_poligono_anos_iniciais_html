@@ -1,0 +1,121 @@
+.css_07_secao_04 {
+  width: 100%;
+  position: relative;
+  border-radius: 0 0 0 16px;
+  margin-right: 50px;
+
+
+  &::before {
+    content: '';
+    height: 100%;
+    width: 43px;
+    position: absolute;
+    border-radius: 0 0 0 26px;
+    top: 0;
+    left: 0;
+    background-color: $apoio_cor1;
+  }
+
+  &::after {
+    content: '';
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    right: 0px;
+    background-color: $art_cor2;
+  }
+
+  .css_07_secao_04_text {
+    padding: 24px 80px 24px 42px;
+    position: relative;
+    z-index: 2;
+    width: 75%;
+    margin-left: 43px;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    color: #fff;
+  }
+
+  &.artes {
+    &::after {
+      background-color: $art_cor2;
+    }
+
+    .css_07_secao_04_text {
+      background-color: $art_cor1;
+
+    }
+  }
+
+  &.ciencias {
+    &::after {
+      background-color: $cie_cor2;
+    }
+
+    .css_07_secao_04_text {
+      background-color: $cie_cor1;
+
+    }
+  }
+
+  &.geografia {
+    &::after {
+      background-color: $geo_cor2;
+    }
+
+    .css_07_secao_04_text {
+      background-color: $geo_cor1;
+
+    }
+  }
+
+  &.historia {
+    &::after {
+      background-color: $his_cor2;
+    }
+
+    .css_07_secao_04_text {
+      background-color: $his_cor1;
+
+    }
+  }
+
+  &.lingua_inglesa {
+    &::after {
+      background-color: $ing_cor2;
+    }
+
+    .css_07_secao_04_text {
+      background-color: $ing_cor1;
+
+    }
+  }
+
+  &.lingua_portuguesa {
+    &::after {
+      background-color: $por_cor2;
+    }
+
+    .css_07_secao_04_text {
+      background-color: $por_cor1;
+
+    }
+  }
+
+  &.matematica {
+    &::after {
+      background-color: $mat_cor2;
+    }
+
+    .css_07_secao_04_text {
+      background-color: $mat_cor1;
+
+    }
+  }
+
+
+}

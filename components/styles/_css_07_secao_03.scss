@@ -1,0 +1,57 @@
+.css_07_secao_03 {
+  width: 100%;
+  background-color: #f5f5f5;
+  position: relative;
+  text-align: center;
+  margin-top: 68px;
+
+  &::after {
+    content: '';
+    height: 100%;
+    width: 68px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-A.svg);
+  }
+
+  .css_07_secao_03_text {
+    margin: 0;
+    padding: 0;
+    font-family: $fontName;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    color: #fff;
+  }
+
+  &.artes {
+    background-color: $art_cor1;
+  }
+
+  &.ciencias {
+    background-color: $cie_cor1;
+  }
+
+  &.geografia {
+    background-color: $geo_cor1;
+  }
+
+  &.historia {
+    background-color: $his_cor1;
+  }
+
+  &.lingua_inglesa {
+    background-color: $ing_cor1;
+  }
+
+  &.lingua_portuguesa {
+    background-color: $por_cor1;
+  }
+
+  &.matematica {
+    background-color: $mat_cor1;
+  }
+
+
+}

@@ -1,0 +1,124 @@
+.css_02_texto_destaque2 {
+  padding: 34px 42px;
+  border: 2px solid grey;
+  border-radius: 0px 16px 16px 16px;
+  position: relative;
+  margin-top: 42px;
+
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-color: #c6c6c6;
+  }
+
+  .css_02_texto_destaque2_titulo {
+    font-family: $fontName;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    color: #c6c6c6;
+  }
+
+  .css_02_texto_destaque2_text {
+    font-family: $fontName;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  &.artes {
+    &::before {
+      background-color: $art_cor2;
+    }
+
+    .css_02_texto_destaque2_titulo {
+      color: $art_cor1;
+    }
+
+    border: 2px solid $art_cor1;
+  }
+
+
+  &.ciencias {
+    &::before {
+      background-color: $cie_cor2;
+    }
+
+    .css_02_texto_destaque2_titulo {
+      color: $cie_cor1;
+    }
+
+    border: 2px solid $cie_cor1;
+  }
+
+
+  &.geografia {
+    &::before {
+      background-color: $geo_cor2;
+    }
+
+    .css_02_texto_destaque2_titulo {
+      color: $geo_cor1;
+    }
+
+    border: 2px solid $geo_cor1;
+  }
+
+
+  &.historia {
+    &::before {
+      background-color: $his_cor2;
+    }
+
+    .css_02_texto_destaque2_titulo {
+      color: $his_cor1;
+    }
+
+    border: 2px solid $his_cor1;
+  }
+
+
+  &.lingua_inglesa {
+    &::before {
+      background-color: $ing_cor2;
+    }
+
+    .css_02_texto_destaque2_titulo {
+      color: $ing_cor1;
+    }
+
+    border: 2px solid $ing_cor1;
+  }
+
+
+  &.lingua_portuguesa {
+    &::before {
+      background-color: $por_cor2;
+    }
+
+    .css_02_texto_destaque2_titulo {
+      color: $por_cor1;
+    }
+
+    border: 2px solid $por_cor1;
+  }
+
+
+  &.matematica {
+    &::before {
+      background-color: $mat_cor2;
+    }
+
+    .css_02_texto_destaque2_titulo {
+      color: $mat_cor1;
+    }
+
+    border: 2px solid $mat_cor1;
+  }
+}

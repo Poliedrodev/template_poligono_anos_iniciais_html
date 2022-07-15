@@ -467,9 +467,9 @@
             ]
         },
         {
-            "name": "container_saiba_mais",
+            "name": "container_glossario",
             "icon": "icons/components/container.svg",
-            "label": "Container Saiba Mais",
+            "label": "Container Glossário",
             "properties": [
                 "style",
                 "text-align",
@@ -845,14 +845,29 @@
             }
         },
         {
-            "name": "css_02_texto_destaque",
+            "name": "css_02_texto_destaque1",
             "icon": "icons/components/icon_02_texto_destaque.svg",
             "label": "Destaque 1",
+            "allowNesting": "yes",
             "properties": [
-                "style",
-                "text-align",
-                "letter-spacing",
-                "line-height"
+                "style"
+            ]
+        },
+        {
+            "name": "css_02_texto_destaque2",
+            "icon": "icons/components/icon_02_texto_destaque.svg",
+            "label": "Destaque 2",
+            "allowNesting": "yes",
+            "properties": [
+                "style"
+            ]
+        },
+        {
+            "name": "css_02_texto_destaque3",
+            "icon": "icons/components/icon_02_texto_destaque.svg",
+            "label": "Destaque 3",
+            "properties": [
+                "style"
             ],
             "directiveOptions": {
                 "text": {
@@ -1698,6 +1713,19 @@
             }
         },
         {
+            "name": "css_06_boxe_abertura_unidade",
+            "icon": "icons/components/icon_06_boxe_bullet.svg",
+            "label": "Abertura Unidade",
+            "properties": [
+                "style"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
             "name": "css_06_boxe_bullet",
             "icon": "icons/components/icon_06_boxe_bullet.svg",
             "label": "06 Boxe Bullet",
@@ -1927,6 +1955,38 @@
             "name": "css_06_boxe_titulo3",
             "icon": "icons/components/icon_06_boxe_titulo3.svg",
             "label": "06 Boxe Título 3",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_07_secao_03",
+            "icon": "icons/components/icon_07_secao_exercicio_alternativa.svg",
+            "label": "Seção 03",
+            "properties": [
+                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_07_secao_04",
+            "icon": "icons/components/icon_07_secao_exercicio_alternativa.svg",
+            "label": "Seção 04",
             "properties": [
                 "style",
                 "text-align",
@@ -2712,7 +2772,7 @@
             }
         },
         {
-            "name": "image_phases",
+            "name": "image_poligono",
             "icon": "icons/components/image.svg",
             "label": {
                 "key": "COMPONENT_IMAGE2_LABEL"
@@ -2721,14 +2781,8 @@
                 "position",
                 "width",
                 "style",
-                "inside-caption",
-                "text-align",
-                "letter-spacing",
-                "line-height",
-                {
-                    "name": "edit-image",
-                    "directiveKey": "image"
-                }
+                "style_image_fit_content",
+                "inside-caption"
             ],
             "directiveOptions": {
                 "caption": {
@@ -2968,6 +3022,36 @@
                     "stripStylingOnPaste": true
                 },
                 "author": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "hero_poligono",
+            "icon": "icons/components/hero.svg",
+            "label": {
+                "key": "COMPONENT_HERO_LABEL"
+            },
+            "allowNesting": "no",
+            "properties": [
+                "fixed-background",
+                "style",
+                {
+                    "name": "text-align",
+                    "defaultValue": "_align-middle"
+                },
+                "letter-spacing",
+                "line-height",
+                {
+                    "name": "edit-image",
+                    "directiveKey": "image"
+                }
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                },
+                "subtitle": {
                     "stripStylingOnPaste": true
                 }
             }
@@ -3332,7 +3416,7 @@
                 "container_read_more",
                 "container_fica_a_dica",
                 "container_repertorio_cultural",
-                "container_saiba_mais"
+                "container_glossario"
             ]
         },
         {
@@ -3378,7 +3462,9 @@
                 "css_02_texto_citado_titulo2",
                 "css_02_texto_citado",
                 "css_02_texto_definicao",
-                "css_02_texto_destaque",
+                "css_02_texto_destaque1",
+                "css_02_texto_destaque2",
+                "css_02_texto_destaque3",
                 "css_02_texto_geral1",
                 "css_02_texto_geral2",
                 "css_02_texto_geral3",
@@ -3448,7 +3534,8 @@
                 "css_06_boxe_bullet",
                 "css_06_boxe_peso1",
                 "css_06_boxe_peso2",
-                "css_06_boxe_peso3"
+                "css_06_boxe_peso3",
+                "css_06_boxe_abertura_unidade"
             ]
         },
         {
@@ -3463,6 +3550,8 @@
                 "css_07_secao_exercicio2",
                 "css_07_secao_exercicio3",
                 "css_07_secao_exercicio4",
+                "css_07_secao_03",
+                "css_07_secao_04",
                 "css_07_secao_texto_citado",
                 "css_07_secao_texto1",
                 "css_07_secao_texto2",
@@ -3524,7 +3613,8 @@
             "components": [
                 "subtitle",
                 "headline",
-                "hero"
+                "hero",
+                "hero_poligono"
             ]
         },
         {
@@ -3549,7 +3639,7 @@
             "name": "media",
             "components": [
                 "image",
-                "image_phases",
+                "image_poligono",
                 "embed",
                 "product",
                 "social-media",
@@ -3854,6 +3944,39 @@
                             }
                         },
                         "value": "matematica"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_image_fit_content",
+            "label": "Ajustar tamanho da imagem",
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Tamanho real"
+                            }
+                        },
+                        "value": "_fit_content"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "Tamanho real ao meio"
+                            }
+                        },
+                        "value": "_fit_content_margin_auto"
                     }
                 ]
             },

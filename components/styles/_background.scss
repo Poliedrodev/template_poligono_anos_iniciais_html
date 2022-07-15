@@ -1,74 +1,55 @@
 .body-book {
+  background-position: center;
+  background-attachment: fixed;
+
   &.artes {
-    background-color: $art_cor2;
-    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Artes.svg');
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/poligono/ART-background-poligono.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: fit-content;
+    background-color: $art_bg;
   }
 
   &.ciencias {
-    background-color: $cie_cor2;
-    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Ciencias.svg');
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/poligono/CIE-background-poligono.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: fit-content;
-
-  }
-
-  &.matematica {
-    background-color: $mat_cor2;
-    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Matematica.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: fit-content;
-
+    background-color: $cie_bg;
   }
 
   &.geografia {
-    background-color: $geo_cor2;
-    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Geografia.svg');
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/poligono/GEO-background-poligono.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: fit-content;
+    background-color: $geo_bg;
   }
 
   &.historia {
-    background-color: $his_cor2;
-    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Historia.svg');
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/poligono/HIS-background-poligono.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: fit-content;
+    background-color: $his_bg;
   }
 
   &.lingua_inglesa {
-    background-color: $ing_cor2;
-    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Ingles.svg');
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/poligono/ING-background-poligono.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: fit-content;
+    background-color: $ing_bg;
   }
 
   &.lingua_portuguesa {
-    background-color: $por_cor2;
-    background-image: url('https://livro-digital.p4ed.com/assets/icons/phases/kdFundo_Portugues.svg');
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/poligono/LPO-background-poligono.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: fit-content;
+    background-color: $por_bg;
   }
+
+  &.matematica {
+    background-image: url('https://livro-digital.p4ed.com/assets/icons/poligono/MAT-background-poligono.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $mat_bg;
+  }
+
 
 }

@@ -1,5 +1,5 @@
 /* Image component style */
-.image_phases {
+.image_poligono {
   margin: 12px auto;
   position: relative;
   clear: both;
@@ -8,45 +8,17 @@
   width: 100%;
 
   ._image {
-    width: 100%;
+    border-radius: 15px;
+    max-width: 100%;
   }
 
-  .slider-subtitle {
-    position: relative;
-    margin-top: 8px;
+  &._fit_content ._image {
+    width: fit-content;
   }
 
-  .slider-subtitle::before {
-    content: "";
-    height: 2px;
-    width: 26%;
-    position: absolute;
-    left: 0;
-    top: -4px;
-  }
-
-  &.artes {
-    .slider-subtitle::before {
-      background-color: $seg_lin_cor1;
-    }
-  }
-
-  &.lingua_portuguesa {
-    .slider-subtitle::before {
-      background-color: $seg_lin_cor1;
-    }
-  }
-
-  &.lingua_inglesa {
-    .slider-subtitle::before {
-      background-color: $seg_lin_cor1;
-    }
-  }
-
-  &.matematica {
-    .slider-subtitle::before {
-      background-color: $seg_mat_cor1;
-    }
+  &._fit_content_margin_auto ._image {
+    width: fit-content;
+    margin: auto;
   }
 
   &._left {
@@ -103,7 +75,6 @@
     color: #000000;
     margin-top: 4px;
     margin-bottom: 2px;
-
   }
 
   %caption-shared {

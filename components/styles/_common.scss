@@ -211,8 +211,8 @@ $phone-max-width: 481px;
     src: url(https://livro-digital.p4ed.com/assets/fonts/woodwing/MathSymbol_JSD-Regular.ttf);
 }
 
-html,
-body {
+.body-book,
+.body {
     padding: 0;
     margin: 0;
     font: $defaultFontSize $fontName;
@@ -229,9 +229,9 @@ body {
     }
 }
 
-body {
+.body {
     max-width: $max-width;
-    padding: 0 5px;
+    padding: 0 68px;
     margin-left: auto;
     margin-right: auto;
     overflow-x: hidden;
@@ -251,7 +251,7 @@ span[data-text-edit-color] {
 }
 
 /* Components style */
-/* Shared style for text related components: title, subtitle, intro, body and footer */
+/* Shared style for text related components: title, subtitle, intro, .body and footer */
 .text {
     display: block;
     margin: 34px auto;
@@ -284,7 +284,7 @@ span[data-text-edit-color] {
 .hero-js {
     height: 100%;
 
-    body {
+    .body {
         height: 100%;
     }
 
@@ -346,7 +346,7 @@ span[data-text-edit-color] {
     }
 
     &.hero-js-android {
-        body {
+        .body {
             max-width: none;
         }
 

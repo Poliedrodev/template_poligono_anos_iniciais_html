@@ -1,0 +1,123 @@
+.container_professor {
+    width: 100%;
+    min-height: 40px;
+    border-top: 8px solid $vol2_bg;
+    border-bottom: 8px solid $vol2_bg;
+    position: relative;
+    box-sizing: border-box;
+    padding: 16px 42px 16px 42px;
+    transition: all 0.3;
+    margin-top: 32px;
+
+
+    &.vol2 {
+        border-top: 8px solid $vol2_bg;
+        border-bottom: 8px solid $vol2_bg;
+    }
+
+    &.vol3 {
+        border-top: 8px solid $vol3_bg;
+        border-bottom: 8px solid $vol3_bg;
+    }
+
+    &.vol4 {
+        border-top: 8px solid $vol4_bg;
+        border-bottom: 8px solid $vol4_bg;
+    }
+
+    &.vol5 {
+        border-top: 8px solid $vol5_bg;
+        border-bottom: 8px solid $vol5_bg;
+    }
+
+
+    .collapsible-title {
+        margin: 0;
+        font-family: $fontName;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.125rem;
+        color: #000000;
+
+    }
+
+    .plus_less_icon {
+        border-radius: 0px 0px 10px 10px;
+        background: linear-gradient(90deg, #00BBD6 -2.05%, #7EC352 101.39%);
+        padding: 12px;
+        position: relative;
+        top: -16px;
+    }
+
+    .plus {
+        --b: 4px;
+        width: 24px;
+        aspect-ratio: 1/1;
+        background: conic-gradient(from 90deg at var(--b) var(--b), transparent 90deg, white 0) calc(100% + var(--b)/2) calc(100% + var(--b)/2)/calc(50% + var(--b)) calc(50% + var(--b));
+        display: inline-block;
+    }
+
+    .less {
+        --b: 4px;
+        width: 24px;
+        aspect-ratio: 1/1;
+        background:
+            conic-gradient(from 90deg at var(--b) var(--b), transparent 180deg, white 0) calc(100% + var(--b)/2) calc(100% + var(--b)/2)/ calc(50% + var(--b)) calc(50% + var(--b));
+    }
+
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .lbl-toggle-professor {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.25s ease-out;
+
+    }
+
+
+    .toggle:checked+.lbl-toggle-professor+.collapsible-content-professor {
+        max-height: 90rem;
+    }
+
+    .toggle:checked+.lbl-toggle-professor .plus {
+        display: none;
+    }
+
+    .toggle:checked+.lbl-toggle-professor .less {
+        display: block;
+    }
+
+    .less {
+        display: none;
+    }
+
+    .toggle:checked+.lbl-toggle-professor {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .collapsible-content-professor .content-inner {
+        padding-top: 8px;
+        border-left: 3px solid white;
+    }
+
+    .collapsible-content-professor {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.25s ease-in-out;
+    }
+
+    .flex-icon {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}

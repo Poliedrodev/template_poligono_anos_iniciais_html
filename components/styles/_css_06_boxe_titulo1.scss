@@ -21,17 +21,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 20px;
+    width: 14px;
     margin-left: 20px;
+    height: 14px;
+    transform: rotate(90deg);
     position: relative;
 
     &::after {
       content: '';
       width: 14px;
-      height: 20px;
+      height: 14px;
       background-color: $vol2_cor3;
       left: 0;
-      top: -20px;
+      top: 14px;
       position: absolute;
     }
   }

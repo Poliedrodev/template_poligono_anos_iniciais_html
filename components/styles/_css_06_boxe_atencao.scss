@@ -1,0 +1,46 @@
+.css_06_boxe_atencao {
+  margin-top: 32px;
+
+  .css_06_boxe_atencao_secao_titulo {
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 100%;
+      min-width: 54px;
+      position: absolute;
+      left: 204px;
+      top: 0;
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/atencao.svg);
+      background-position: center;
+      background-size: cover;
+      transform: rotate(90deg);
+      background-repeat: no-repeat;
+    }
+
+    .css_06_boxe_atencao_titulo {
+      margin: 0;
+      font-family: $fontName;
+      font-size: 24px;
+      font-weight: 700;
+      font-style: normal;
+      color: #fff;
+      background-color: #E4032E;
+      width: fit-content;
+      text-transform: uppercase;
+      padding: 8px 42px;
+    }
+
+  }
+
+  .css_06_boxe_atencao_secao {
+    border: solid 4px #E4032E;
+    min-height: 100px;
+    padding: 42px;
+    border-radius: 0px 0px 15px 0px;
+  }
+
+
+
+
+}

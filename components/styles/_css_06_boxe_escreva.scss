@@ -1,0 +1,21 @@
+.css_02_texto_escreva {
+  padding: 11px 42px;
+  margin-top: 16px;
+  border: 2px solid $vol2_cor2;
+
+  &.vol2 {
+    border: 2px solid $vol2_cor2;
+  }
+
+  &.vol3 {
+    border: 2px solid $vol3_cor2;
+  }
+
+  &.vol4 {
+    border: 2px solid $vol4_cor2;
+  }
+
+  &.vol5 {
+    border: 2px solid $vol5_cor2;
+  }
+}

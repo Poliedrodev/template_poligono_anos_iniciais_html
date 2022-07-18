@@ -63,254 +63,146 @@
     }
   }
 
-  &.artes {
+  &.vol2 {
     &.css_03_2exercicio_alternativa_item {
       &::before {
-        color: $art_cor2;
+        color: $vol2_cor3;
       }
     }
 
     &.item_romano_itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $art_cor2;
+        color: $vol2_cor3;
       }
     }
 
     &.itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $art_cor2;
+        color: $vol2_cor3;
       }
     }
 
     &.item_romano_itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $art_cor2;
+        color: $vol2_cor3;
       }
     }
 
     &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
       &::after {
-        color: $art_cor2;
+        color: $vol2_cor3;
       }
 
       &::before {
-        color: $art_cor2;
+        color: $vol2_cor3;
       }
     }
   }
 
-  &.historia {
+  &.vol3 {
     &.css_03_2exercicio_alternativa_item {
       &::before {
-        color: $his_cor2;
+        color: $vol3_cor3;
       }
     }
 
     &.item_romano_itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $his_cor2;
+        color: $vol3_cor3;
       }
     }
 
     &.itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $his_cor2;
+        color: $vol3_cor3;
       }
     }
 
     &.item_romano_itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $his_cor2;
+        color: $vol3_cor3;
       }
     }
 
     &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
       &::after {
-        color: $his_cor2;
+        color: $vol3_cor3;
       }
 
       &::before {
-        color: $his_cor2;
+        color: $vol3_cor3;
       }
     }
   }
 
-  &.geografia {
+  &.vol4 {
     &.css_03_2exercicio_alternativa_item {
       &::before {
-        color: $geo_cor2;
+        color: $vol4_cor3;
       }
     }
 
     &.item_romano_itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $geo_cor2;
+        color: $vol4_cor3;
       }
     }
 
     &.itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $geo_cor2;
+        color: $vol4_cor3;
       }
     }
 
     &.item_romano_itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $geo_cor2;
+        color: $vol4_cor3;
       }
     }
 
     &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
       &::after {
-        color: $geo_cor2;
+        color: $vol4_cor3;
       }
 
       &::before {
-        color: $geo_cor2;
+        color: $vol4_cor3;
       }
     }
   }
 
-  &.ciencias {
+  &.vol5 {
     &.css_03_2exercicio_alternativa_item {
       &::before {
-        color: $cie_cor2;
+        color: $vol5_cor3;
       }
     }
 
     &.item_romano_itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $cie_cor2;
+        color: $vol5_cor3;
       }
     }
 
     &.itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $cie_cor2;
+        color: $vol5_cor3;
       }
     }
 
     &.item_romano_itens .css_03_2exercicio_alternativa_item {
       &::before {
-        color: $cie_cor2;
+        color: $vol5_cor3;
       }
     }
 
     &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
       &::after {
-        color: $cie_cor2;
+        color: $vol5_cor3;
       }
 
       &::before {
-        color: $cie_cor2;
-      }
-    }
-  }
-
-  &.lingua_inglesa {
-    &.css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $ing_cor2;
-      }
-    }
-
-    &.item_romano_itens .css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $ing_cor2;
-      }
-    }
-
-    &.itens .css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $ing_cor2;
-      }
-    }
-
-    &.item_romano_itens .css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $ing_cor2;
-      }
-    }
-
-    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
-      &::after {
-        color: $ing_cor2;
-      }
-
-      &::before {
-        color: $ing_cor2;
-      }
-    }
-  }
-
-  &.lingua_portuguesa {
-    &.css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $por_cor2;
-      }
-    }
-
-    &.item_romano_itens .css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $por_cor2;
-      }
-    }
-
-    &.itens .css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $por_cor2;
-      }
-    }
-
-    &.item_romano_itens .css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $por_cor2;
-      }
-    }
-
-    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
-      &::after {
-        color: $por_cor2;
-      }
-
-      &::before {
-        color: $por_cor2;
-      }
-    }
-  }
-
-  &.matematica {
-    &.css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $mat_cor2;
-      }
-    }
-
-    &.item_romano_itens .css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $mat_cor2;
-      }
-    }
-
-    &.itens .css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $mat_cor2;
-      }
-    }
-
-    &.item_romano_itens .css_03_2exercicio_alternativa_item {
-      &::before {
-        color: $mat_cor2;
-      }
-    }
-
-    &.alternativa_assinalar_itens .css_03_2exercicio_alternativa_item {
-      &::after {
-        color: $mat_cor2;
-      }
-
-      &::before {
-        color: $mat_cor2;
+        color: $vol5_cor3;
       }
     }
   }

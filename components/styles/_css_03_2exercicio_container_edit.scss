@@ -1,6 +1,5 @@
 .css_03_2exercicio_container_edit {
   margin-top: 31px;
-
   position: relative;
   display: grid;
   grid-template-columns: min-content auto;
@@ -18,15 +17,13 @@
 
     .background_number {
       width: 36px;
-      height: 24px;
-      border-radius: 8px;
+      height: 36px;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      background-color: #FDB913;
-
-
+      background-color: $vol2_cor3;
 
       .number_exercicio {
         margin: 0;
@@ -34,6 +31,7 @@
         font-weight: 800;
         font-variant: tabular-nums;
         font-size: $fontName;
+        color: #fff;
       }
     }
   }
@@ -46,46 +44,27 @@
     }
   }
 
-  &.artes {
-    .number_exercicio {
-      color: $art_cor1;
+  &.vol2 {
+    .background_number {
+      background-color: $vol2_cor3;
     }
   }
 
-  &.lingua_inglesa {
-    .number_exercicio {
-      color: $ing_cor1;
+  &.vol3 {
+    .background_number {
+      background-color: $vol3_cor3;
     }
   }
 
-  &.lingua_portuguesa {
-    .number_exercicio {
-      color: $por_cor1;
+  &.vol4 {
+    .background_number {
+      background-color: $vol4_cor3;
     }
   }
 
-  &.matematica {
-    .number_exercicio {
-      color: $mat_cor1;
+  &.vol5 {
+    .background_number {
+      background-color: $vol5_cor3;
     }
   }
-
-  &.ciencias {
-    .number_exercicio {
-      color: $cie_cor1;
-    }
-  }
-
-  &.geografia {
-    .number_exercicio {
-      color: $geo_cor1;
-    }
-  }
-
-  &.historia {
-    .number_exercicio {
-      color: $his_cor1;
-    }
-  }
-
 }

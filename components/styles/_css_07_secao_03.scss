@@ -1,5 +1,6 @@
 .css_07_secao_03 {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   margin-top: 36px;
   width: 100%;
@@ -14,23 +15,26 @@
     color: #fff;
     background-color: $vol2_cor1;
     width: fit-content;
+    text-transform: uppercase;
   }
 
   .css_07_secao_03_bg {
     width: 100%;
     background-color: $vol2_cor2;
     position: relative;
-    min-height: 42px;
+    height: 100%;
 
     &::before {
       content: '';
       height: 100%;
+      width: 67px;
       position: absolute;
       left: 0;
       background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-degrade.svg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      transform: rotate(90deg);
     }
   }
 
@@ -41,7 +45,11 @@
     }
 
     .css_07_secao_03_bg {
-      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-degrade.svg);
+      background-color: $vol2_cor2;
+
+      &::before {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-degrade.svg);
+      }
     }
   }
 
@@ -52,7 +60,11 @@
     }
 
     .css_07_secao_03_bg {
-      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL3-degrade.svg);
+      background-color: $vol3_cor2;
+
+      &::before {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL3-degrade.svg);
+      }
     }
   }
 
@@ -63,7 +75,11 @@
     }
 
     .css_07_secao_03_bg {
-      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-degrade.svg);
+      background-color: $vol4_cor2;
+
+      &::before {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-degrade.svg);
+      }
     }
   }
 
@@ -74,7 +90,11 @@
     }
 
     .css_07_secao_03_bg {
-      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL5-degrade.svg);
+      background-color: $vol5_cor2;
+
+      &::before {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL5-degrade.svg);
+      }
     }
   }
 

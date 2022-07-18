@@ -36,16 +36,14 @@
 
     .hero_headline {
         width: 100%;
-        background: linear-gradient(90deg, rgb(253, 185, 19) 27%, rgb(237, 26, 59) 5%);
+        background: linear-gradient(90deg, $vol2_cor1 27%, $vol2_cor2 5%);
         position: absolute;
         top: 0;
-
-
 
         .inner_hero {
             max-width: 860px;
             display: grid;
-            grid-template-columns: 150px 1fr;
+            grid-template-columns: 180px 1fr;
             align-items: center;
             gap: 50px;
             margin: auto;
@@ -62,6 +60,7 @@
                 padding: 16px;
                 margin: 0;
 
+
                 &::before {
                     content: 'unidade';
                     font-family: $fontName;
@@ -77,6 +76,7 @@
 
                 .hero_capitulo_section_num {
                     font-family: $fontName;
+                    margin: 0;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 100px;
@@ -87,6 +87,8 @@
             }
 
             .hero_poligono_titulo {
+                z-index: 1;
+                position: relative;
                 font-family: $fontName;
                 font-style: normal;
                 font-weight: 800;
@@ -106,13 +108,22 @@
         .hero_headline {
             background: linear-gradient(90deg, $vol2_cor1 27%, $vol2_cor2 5%);
 
+            .inner_hero {
+                background: linear-gradient(90deg, $vol2_cor1 10%, $vol2_cor2 5%);
+            }
+
             &::before {
                 content: '';
                 height: 100%;
                 position: absolute;
                 right: 0;
+                width: 180px;
                 top: 0;
                 background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-degrade.svg);
+                background-position: center;
+                background-size: cover;
+                transform: rotate(-90deg);
+                background-repeat: no-repeat;
             }
         }
 
@@ -127,13 +138,23 @@
         .hero_headline {
             background: linear-gradient(90deg, $vol3_cor1 27%, $vol3_cor2 5%);
 
+            .inner_hero {
+                background: linear-gradient(90deg, $vol3_cor1 10%, $vol3_cor2 5%);
+            }
+
             &::before {
                 content: '';
                 height: 100%;
                 position: absolute;
                 right: 0;
+                width: 180px;
                 top: 0;
+                z-index: 2;
                 background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL3-degrade.svg);
+                background-position: center;
+                background-size: cover;
+                transform: rotate(-90deg);
+                background-repeat: no-repeat;
             }
         }
 
@@ -148,13 +169,23 @@
         .hero_headline {
             background: linear-gradient(90deg, $vol4_cor1 27%, $vol4_cor2 5%);
 
+            .inner_hero {
+                background: linear-gradient(90deg, $vol4_cor1 10%, $vol4_cor2 5%);
+            }
+
             &::before {
                 content: '';
                 height: 100%;
                 position: absolute;
                 right: 0;
+                width: 180px;
                 top: 0;
+                z-index: 2;
                 background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-degrade.svg);
+                background-position: center;
+                background-size: cover;
+                transform: rotate(-90deg);
+                background-repeat: no-repeat;
             }
         }
 
@@ -169,13 +200,23 @@
         .hero_headline {
             background: linear-gradient(90deg, $vol5_cor1 27%, $vol5_cor2 5%);
 
+            .inner_hero {
+                background: linear-gradient(90deg, $vol5_cor1 10%, $vol5_cor2 5%);
+            }
+
             &::before {
                 content: '';
                 height: 100%;
                 position: absolute;
                 right: 0;
+                width: 180px;
                 top: 0;
+                z-index: 2;
                 background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL5-degrade.svg);
+                background-position: center;
+                background-size: cover;
+                transform: rotate(-90deg);
+                background-repeat: no-repeat;
             }
         }
 

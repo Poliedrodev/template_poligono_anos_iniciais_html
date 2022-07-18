@@ -200,7 +200,7 @@ $apoio_bg: #FFF1D0;
 
 /* Outros */
 $fontName: 'Rubik', sans-serif;
-$fonteSerifa: 'Bitter', serif;
+$fonteSerifa: 'Roboto Condensed', sans-serif;
 $defaultFontSize: 18px;
 $defaultFontWeight: 300;
 $screen-sm-max: 991px;
@@ -226,6 +226,8 @@ $phone-max-width: 481px;
 @import url(https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;600;700;800&family=Rubik:wght@300;600;700;800&display=swap');
 @import url(https://livro-digital.p4ed.com/assets/fonts/woodwing/MathSymbol_JSD-Regular.ttf);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 /* Article view style */
 @font-face {

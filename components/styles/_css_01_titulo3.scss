@@ -5,95 +5,28 @@
   font-weight: 700;
   font-size: 24px;
   margin-top: 24px;
-  color: #00ADA1;
+  color: $vol2_cor3;
   text-align: left;
+  text-transform: uppercase;
 
 
   /* Características do componente */
 
   /* Variações de cores */
-  &.artes {
-    color: $art_cor1;
+  &.vol2 {
+    color: $vol2_cor1;
   }
 
-  &.biologia {
-    color: $bio_cor1;
+  &.vol3 {
+    color: $vol3_cor1;
   }
 
-  &.ciencias {
-    color: $cie_cor1;
+  &.vol4 {
+    color: $vol4_cor1;
   }
 
-  &.educacao_fisica {
-    color: $edf_cor1;
-  }
-
-  &.filosofia {
-    color: $fil_cor1;
-  }
-
-  &.fisica {
-    color: $fis_cor1;
-  }
-
-  &.geografia {
-    color: $geo_cor1;
-  }
-
-  &.gramatica {
-    color: $gra_cor1;
-  }
-
-  &.historia {
-    color: $his_cor1;
-  }
-
-  &.integrado {
-    color: $int_cor1;
-  }
-
-  &.inter_de_texto {
-    color: $itx_cor1;
-  }
-
-  &.lingua_espanhola {
-    color: $esp_cor1;
-  }
-
-  &.lingua_inglesa {
-    color: $ing_cor1;
-  }
-
-  &.lingua_portuguesa {
-    color: $por_cor1;
-  }
-
-  &.linguagens {
-    color: $lin_cor1;
-  }
-
-  &.literatura {
-    color: $lit_cor1;
-  }
-
-  &.matematica {
-    color: $mat_cor1;
-  }
-
-  &.musica {
-    color: $mus_cor1;
-  }
-
-  &.producao_de_texto {
-    color: $ptx_cor1;
-  }
-
-  &.quimica {
-    color: $qui_cor1;
-  }
-
-  &.sociologia {
-    color: $soc_cor1;
+  &.vol5 {
+    color: $vol5_cor1;
   }
 
 }

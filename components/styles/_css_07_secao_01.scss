@@ -1,0 +1,96 @@
+.css_07_secao_01 {
+  width: 100%;
+  background-color: #f5f5f5;
+  position: relative;
+  text-align: center;
+  margin-top: 68px;
+
+  &::after {
+    content: '';
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: -50%;
+    right: 0;
+    background-color: $vol2_cor2;
+  }
+
+  &::before {
+    content: '';
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    background-color: $vol2_cor3;
+  }
+
+  .css_07_secao_01_text {
+    margin: 0;
+    padding: 8px;
+    font-family: $fontName;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    color: #fff;
+    background-color: $art_cor1;
+  }
+
+  &.vol2 {
+    &::after {
+      background-color: $vol2_cor2;
+    }
+
+    &::before {
+      background-color: $vol2_cor3;
+    }
+
+    .css_07_secao_01_text {
+      background-color: $vol2_cor1;
+    }
+  }
+
+  &.vol3 {
+    &::after {
+      background-color: $vol3_cor2;
+    }
+
+    &::before {
+      background-color: $vol3_cor3;
+    }
+
+    .css_07_secao_01_text {
+      background-color: $vol3_cor1;
+    }
+  }
+
+  &.vol4 {
+    &::after {
+      background-color: $vol4_cor2;
+    }
+
+    &::before {
+      background-color: $vol4_cor3;
+    }
+
+    .css_07_secao_01_text {
+      background-color: $vol4_cor1;
+    }
+  }
+
+  &.vol5 {
+    &::after {
+      background-color: $vol5_cor2;
+    }
+
+    &::before {
+      background-color: $vol5_cor3;
+    }
+
+    .css_07_secao_01_text {
+      background-color: $vol5_cor1;
+    }
+  }
+
+
+}

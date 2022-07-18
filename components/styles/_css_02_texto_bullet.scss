@@ -1,11 +1,12 @@
 .css_02_texto_bullet {
-  display: block;
-  font-size: 18px;
-  color: #666666;
   font-family: &fontSerifa;
-  padding-bottom: 20px;
-  padding-left: 20px;
-
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+  text-transform: uppercase;
+  color: black;
 
   li {
     font-family: &fontSerifa;
@@ -13,6 +14,52 @@
     font-style: normal;
     font-weight: 300;
     padding-left: 4px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 20px;
 
+    &::before {
+      content: "";
+      position: absolute;
+      left: -38px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: black;
+    }
+
+  }
+
+  &.vol2 {
+    li {
+      &::before {
+        background-color: $vol2_cor1;
+      }
+    }
+  }
+
+  &.vol3 {
+    li {
+      &::before {
+        background-color: $vol3_cor1;
+      }
+    }
+  }
+
+  &.vol4 {
+    li {
+      &::before {
+        background-color: $vol4_cor1;
+      }
+    }
+  }
+
+  &.vol5 {
+    li {
+      &::before {
+        background-color: $vol5_cor1;
+      }
+    }
   }
 }

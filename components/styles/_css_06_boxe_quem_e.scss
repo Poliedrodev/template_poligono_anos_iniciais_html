@@ -1,0 +1,101 @@
+.css_06_boxe_quem_e {
+  margin-top: 32px;
+
+  .css_06_boxe_quem_e_secao_titulo {
+    background-color: $apoio_cor1;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-A.svg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .css_06_boxe_quem_e_titulo {
+      margin: 0;
+      font-family: $fontName;
+      font-size: 24px;
+      font-weight: 700;
+      font-style: normal;
+      color: #fff;
+      background-color: #f5f5f5;
+      width: fit-content;
+      padding: 8px 42px;
+    }
+
+  }
+
+  .css_06_boxe_quem_e_secao {
+    border: solid 4px $vol2_cor3;
+    min-height: 100px;
+    padding: 42px;
+    border-radius: 0px 0px 15px 0px;
+  }
+
+  &.vol2 {
+    .css_06_boxe_quem_e_secao_titulo {
+      background-color: $vol2_cor1;
+
+      &::after {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-A.svg);
+      }
+    }
+
+    .css_06_boxe_quem_e_secao {
+      border: solid 4px $vol2_cor3;
+    }
+  }
+
+
+  &.vol3 {
+    .css_06_boxe_quem_e_secao_titulo {
+      background-color: $vol3_cor1;
+
+      &::after {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL3-A.svg);
+      }
+    }
+
+    .css_06_boxe_quem_e_secao {
+      border: solid 4px $vol3_cor3;
+    }
+  }
+
+
+  &.vol4 {
+    .css_06_boxe_quem_e_secao_titulo {
+      background-color: $vol4_cor1;
+
+      &::after {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-A.svg);
+      }
+    }
+
+    .css_06_boxe_quem_e_secao {
+      border: solid 4px $vol4_cor3;
+    }
+  }
+
+
+  &.vol5 {
+    .css_06_boxe_quem_e_secao_titulo {
+      background-color: $vol5_cor1;
+
+      &::after {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL5-A.svg);
+      }
+    }
+
+    .css_06_boxe_quem_e_secao {
+      border: solid 4px $vol5_cor3;
+    }
+  }
+
+
+}

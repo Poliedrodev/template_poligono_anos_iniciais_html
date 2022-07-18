@@ -1,0 +1,26 @@
+.css_06_boxe_abertura_2unidade {
+  position: relative;
+  margin-top: 60px;
+  padding: 24px 42px;
+
+  border: 4px solid $vol2_cor2;
+  border-radius: 0px 0px 16px 0px;
+
+
+  /* Variações de cores */
+  &.vol2 {
+    border: 4px solid $vol2_cor2;
+  }
+
+  &.vol3 {
+    border: 4px solid $vol3_cor2;
+  }
+
+  &.vol4 {
+    border: 4px solid $vol4_cor2;
+  }
+
+  &.vol5 {
+    border: 4px solid $vol5_cor2;
+  }
+}

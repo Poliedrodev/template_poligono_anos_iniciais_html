@@ -649,7 +649,7 @@
             "icon": "icons/components/icon_01_titulo1.svg",
             "label": "01 Título 1",
             "properties": [
-                "style",
+                "style_poligono",
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -665,7 +665,7 @@
             "icon": "icons/components/icon_01_titulo2.svg",
             "label": "01 Título 2",
             "properties": [
-                "style",
+                "style_poligono",
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -681,7 +681,7 @@
             "icon": "icons/components/icon_01_titulo3.svg",
             "label": "01 Título 3",
             "properties": [
-                "style_section",
+                "style_poligono",
                 "style_boxes",
                 "text-align",
                 "letter-spacing",
@@ -698,7 +698,7 @@
             "icon": "icons/components/icon_01_titulo4.svg",
             "label": "01 Título 4",
             "properties": [
-                "style",
+                "style_poligono",
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -714,7 +714,7 @@
             "icon": "icons/components/icon_02_texto_bullet.svg",
             "label": "02 Texto Bullet",
             "properties": [
-                "style",
+                "style_poligono",
                 "style_section",
                 "text-align",
                 "letter-spacing",
@@ -738,11 +738,48 @@
             }
         },
         {
+            "name": "css_02_texto_citado_bullet",
+            "icon": "icons/components/icon_02_texto_bullet.svg",
+            "label": "Citado Bullet",
+            "properties": [
+                "style_poligono",
+                "style_section",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "restrictChildren": {
+                "css_02_texto_citado_bullet_itens": {}
+            },
+            "directiveOptions": {
+                "main": {
+                    "groups": [
+                        {
+                            "label": "Texto Bullet",
+                            "name": "Texto Bullet",
+                            "components": [
+                                "css_02_texto_citado_bullet_itens"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
             "name": "css_02_texto_bullet_itens",
             "icon": "icons/components/icon_02_texto_bullet.svg",
             "label": "Texto Bullet",
             "properties": [
-                "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ]
+        },
+        {
+            "name": "css_02_texto_citado_bullet_itens",
+            "icon": "icons/components/icon_02_texto_bullet.svg",
+            "label": "Texto Citado Bullet",
+            "properties": [
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -784,7 +821,7 @@
             "icon": "icons/components/icon_02_texto_citado_titulo.svg",
             "label": "Citado Título",
             "properties": [
-                "style",
+                "style_poligono",
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -880,7 +917,23 @@
             "icon": "icons/components/icon_02_texto_geral1.svg",
             "label": "Geral",
             "properties": [
-                "style",
+                "style_poligono",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_02_texto_geral_verso",
+            "icon": "icons/components/icon_02_texto_geral1.svg",
+            "label": "Geral Verso",
+            "properties": [
+                "style_poligono",
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -896,7 +949,7 @@
             "icon": "icons/components/icon_02_texto_geral1.svg",
             "label": "Geral 1",
             "properties": [
-                "style",
+                "style_poligono",
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -1713,11 +1766,23 @@
             }
         },
         {
+            "name": "css_06_boxe_abertura_2unidade",
+            "icon": "icons/components/container.svg",
+            "selectionMethod": "handle",
+            "allowNesting": "yes",
+            "label": "Abertura de Unidade",
+            "properties": [
+                "style_poligono",
+                "position",
+                "background-color"
+            ]
+        },
+        {
             "name": "css_06_boxe_abertura_unidade",
-            "icon": "icons/components/icon_06_boxe_bullet.svg",
+            "icon": "icons/components/container.svg",
             "label": "Abertura Unidade",
             "properties": [
-                "style"
+                "style_poligono"
             ],
             "directiveOptions": {
                 "text": {
@@ -1779,6 +1844,22 @@
             "label": "Peso 1",
             "properties": [
                 "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_06_boxe_quem_e",
+            "icon": "icons/components/icon_06_boxe_item.svg",
+            "label": "Quem é/ São",
+            "properties": [
+                "style_poligono",
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -1922,9 +2003,9 @@
         {
             "name": "css_06_boxe_titulo1",
             "icon": "icons/components/icon_06_boxe_titulo1.svg",
-            "label": "06 Boxe Título 1",
+            "label": "Título 1",
             "properties": [
-                "style",
+                "style_poligono",
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -1957,6 +2038,22 @@
             "label": "06 Boxe Título 3",
             "properties": [
                 "style",
+                "text-align",
+                "letter-spacing",
+                "line-height"
+            ],
+            "directiveOptions": {
+                "text": {
+                    "stripStylingOnPaste": true
+                }
+            }
+        },
+        {
+            "name": "css_07_secao_01",
+            "icon": "icons/components/icon_07_secao_exercicio_alternativa.svg",
+            "label": "Seção 01",
+            "properties": [
+                "style_poligono",
                 "text-align",
                 "letter-spacing",
                 "line-height"
@@ -3002,7 +3099,7 @@
             "allowNesting": "no",
             "properties": [
                 "fixed-background",
-                "style",
+                "style_poligono",
                 {
                     "name": "text-align",
                     "defaultValue": "_align-middle"
@@ -3035,7 +3132,7 @@
             "allowNesting": "no",
             "properties": [
                 "fixed-background",
-                "style",
+                "style_poligono",
                 {
                     "name": "text-align",
                     "defaultValue": "_align-middle"
@@ -3130,7 +3227,7 @@
             "allowNesting": "yes",
             "label": "Background Livro",
             "properties": [
-                "style"
+                "style_poligono"
             ]
         },
         {
@@ -3455,19 +3552,16 @@
             "label": "02 Texto geral",
             "name": "02_texto_geral",
             "components": [
+                "css_02_texto_geral1",
+                "css_02_texto_geral_verso",
                 "css_02_texto_bullet",
+                "css_02_texto_citado_bullet",
                 "css_02_texto_bullet_item_texto",
                 "css_02_texto_citado_fonte",
                 "css_02_texto_citado_titulo1",
                 "css_02_texto_citado_titulo2",
                 "css_02_texto_citado",
                 "css_02_texto_definicao",
-                "css_02_texto_destaque1",
-                "css_02_texto_destaque2",
-                "css_02_texto_destaque3",
-                "css_02_texto_geral1",
-                "css_02_texto_geral2",
-                "css_02_texto_geral3",
                 "css_02_texto_glossario_titulo",
                 "css_02_texto_glossario",
                 "css_02_texto_item",
@@ -3532,10 +3626,13 @@
             "name": "06_boxes",
             "components": [
                 "css_06_boxe_bullet",
+                "css_06_boxe_quem_e",
                 "css_06_boxe_peso1",
                 "css_06_boxe_peso2",
                 "css_06_boxe_peso3",
-                "css_06_boxe_abertura_unidade"
+                "css_06_boxe_titulo1",
+                "css_06_boxe_abertura_unidade",
+                "css_06_boxe_abertura_2unidade"
             ]
         },
         {
@@ -3550,6 +3647,7 @@
                 "css_07_secao_exercicio2",
                 "css_07_secao_exercicio3",
                 "css_07_secao_exercicio4",
+                "css_07_secao_01",
                 "css_07_secao_03",
                 "css_07_secao_04",
                 "css_07_secao_texto_citado",
@@ -3944,6 +4042,59 @@
                             }
                         },
                         "value": "matematica"
+                    }
+                ]
+            },
+            "dataType": "styles"
+        },
+        {
+            "name": "style_poligono",
+            "label": {
+                "key": "PROPERTY_VARIANT_LABEL"
+            },
+            "control": {
+                "type": "select",
+                "options": [
+                    {
+                        "caption": {
+                            "key": "PROPERTY_STYLE_DEFAULT_OPTION"
+                        }
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "vol2"
+                            }
+                        },
+                        "value": "vol2"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "vol3"
+                            }
+                        },
+                        "value": "vol3"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "vol4"
+                            }
+                        },
+                        "value": "vol4"
+                    },
+                    {
+                        "caption": {
+                            "key": "PROPERTY_VARIANT_STYLE_OPTION",
+                            "values": {
+                                "0": "vol5"
+                            }
+                        },
+                        "value": "vol5"
                     }
                 ]
             },

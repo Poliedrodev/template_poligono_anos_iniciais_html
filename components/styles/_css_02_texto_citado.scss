@@ -1,8 +1,12 @@
 .css_02_texto_citado {
-  display: block;
-  font-size: 1.125rem;
-  color: #666666;
   font-family: $fonteSerifa;
+  font-style: normal;
   font-weight: 300;
-  margin-top: 8px;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+  text-transform: uppercase;
+  /* terceiros */
+  color: #555555;
+
 }

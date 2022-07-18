@@ -1,0 +1,24 @@
+.css_02_texto_citado_bullet {
+  font-family: &fontSerifa;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: #555555;
+
+
+  li {
+    font-family: &fontSerifa;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    padding-left: 4px;
+
+    &::marker {
+      width: 10px;
+    }
+
+  }
+
+
+}

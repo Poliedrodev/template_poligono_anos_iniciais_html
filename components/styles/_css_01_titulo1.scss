@@ -1,47 +1,97 @@
 .css_01_titulo1 {
-  font-family: $fontName;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 29px;
-  margin: 0;
-  margin-top: 28px;
-  color: #ED1A3B;
+  display: flex;
+  align-items: baseline;
+
+  .css_01_titulo1_titulo {
+    font-family: $fontName;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin: 0;
+    margin-top: 28px;
+    color: #ED1A3B;
+    text-transform: uppercase;
 
 
+  }
 
+  .css_01_titulo1_icon {
+    background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-A.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    position: relative;
+    margin-left: 20px;
+
+    &::after {
+      content: '';
+      width: 14px;
+      height: 20px;
+      background-color: $vol2_cor3;
+      left: 0;
+      top: -20px;
+      position: absolute;
+    }
+  }
 
   /* Variações de cores */
-  &.artes {
-    color: $art_cor2;
+  &.vol2 {
+    .css_01_titulo1_titulo {
+      color: $vol2_cor1;
+    }
+
+    .css_01_titulo1_icon {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-A.svg);
+
+      &::after {
+        background-color: $vol2_cor3;
+      }
+    }
+  }
+
+  &.vol3 {
+    .css_01_titulo1_titulo {
+      color: $vol3_cor1;
+
+      .css_01_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL3-A.svg);
+
+        &::after {
+          background-color: $vol3_cor3;
+        }
+      }
+    }
+  }
+
+  &.vol4 {
+    .css_01_titulo1_titulo {
+      color: $vol4_cor1;
+    }
+
+    .css_01_titulo1_icon {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-A.svg);
+
+      &::after {
+        background-color: $vol4_cor3;
+      }
+    }
+  }
+
+  &.vol5 {
+    .css_01_titulo1_titulo {
+      color: $vol5_cor1;
+    }
+
+    .css_01_titulo1_icon {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL5-A.svg);
+
+      &::after {
+        background-color: $vol5_cor3;
+      }
+    }
   }
 
 
-  &.ciencias {
-    color: $cie_cor2;
-  }
 
-
-  &.geografia {
-    color: $geo_cor2;
-  }
-
-
-  &.historia {
-    color: $his_cor2;
-  }
-
-
-  &.lingua_inglesa {
-    color: $ing_cor2;
-  }
-
-
-  &.lingua_portuguesa {
-    color: $por_cor2;
-  }
-
-
-  &.matematica {
-    color: $mat_cor2;
-  }
 }

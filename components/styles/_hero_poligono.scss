@@ -37,9 +37,9 @@
     .hero_headline {
         width: 100%;
         background: linear-gradient(90deg, rgb(253, 185, 19) 27%, rgb(237, 26, 59) 5%);
-        border-radius: 0 0 68px 0;
         position: absolute;
         top: 0;
+
 
 
         .inner_hero {
@@ -51,7 +51,7 @@
             margin: auto;
 
             .hero_capitulo_section {
-                background: #00ADA1;
+                background: $vol2_cor3;
                 border-radius: 50%;
                 position: relative;
                 width: 150px;
@@ -71,7 +71,7 @@
                     text-transform: uppercase;
                     color: #FFFFFF;
                     position: absolute;
-                    top: 0;
+                    top: 10%;
                     text-align: center;
                 }
 
@@ -94,12 +94,97 @@
                 color: #FFFFFF;
                 margin: 0;
                 text-align: left;
+                text-transform: uppercase;
+
             }
 
 
         }
     }
 
+    &.vol2 {
+        .hero_headline {
+            background: linear-gradient(90deg, $vol2_cor1 27%, $vol2_cor2 5%);
+
+            &::before {
+                content: '';
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-degrade.svg);
+            }
+        }
+
+        .inner_hero {
+            .hero_capitulo_section {
+                background: $vol2_cor3;
+            }
+        }
+    }
+
+    &.vol3 {
+        .hero_headline {
+            background: linear-gradient(90deg, $vol3_cor1 27%, $vol3_cor2 5%);
+
+            &::before {
+                content: '';
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL3-degrade.svg);
+            }
+        }
+
+        .inner_hero {
+            .hero_capitulo_section {
+                background: $vol3_cor3;
+            }
+        }
+    }
+
+    &.vol4 {
+        .hero_headline {
+            background: linear-gradient(90deg, $vol4_cor1 27%, $vol4_cor2 5%);
+
+            &::before {
+                content: '';
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-degrade.svg);
+            }
+        }
+
+        .inner_hero {
+            .hero_capitulo_section {
+                background: $vol4_cor3;
+            }
+        }
+    }
+
+    &.vol5 {
+        .hero_headline {
+            background: linear-gradient(90deg, $vol5_cor1 27%, $vol5_cor2 5%);
+
+            &::before {
+                content: '';
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL5-degrade.svg);
+            }
+        }
+
+        .inner_hero {
+            .hero_capitulo_section {
+                background: $vol5_cor3;
+            }
+        }
+    }
 
     &._fixed-background {
         >figure {

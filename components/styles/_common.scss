@@ -10,6 +10,26 @@ $bancoquestao: #00aeef;
 $bodyBackground: #ffffff;
 $textColor: #000000;
 
+$vol2_cor1: #F04E69;
+$vol2_cor2: #00BBD6;
+$vol2_cor3: #7EC352;
+$vol2_bg: #F695A5;
+
+$vol3_cor1: #00AD86;
+$vol3_cor2: #F15B4E;
+$vol3_cor3: #B455A0;
+$vol3_bg: #66CEB6;
+
+$vol4_cor1: #F58220;
+$vol4_cor2: #27BDBE;
+$vol4_cor3: #717EBD;
+$vol4_bg: #F9B479;
+
+$vol5_cor1: #78368C;
+$vol5_cor2: #86BC25;
+$vol5_cor3: #F7A600;
+$vol5_bg: #AE86BA;
+
 /* Variações de cores */
 /* Artes */
 $art_cor1: #7961AA;
@@ -172,7 +192,9 @@ $seg_hum_cor2: #208F6D;
 $seg_hum_cor3: #D7EDE3;
 $seg_hum_cor4: #EEF7F3;
 
-$apoio_cor1: #FDB913;
+$apoio_cor1: #555555;
+$apoio_cor2: #E4032E;
+$apoio_cor3: #EC008C;
 $apoio_bg: #FFF1D0;
 
 
@@ -231,10 +253,8 @@ $phone-max-width: 481px;
 
 .body {
     max-width: $max-width;
-    padding: 0 68px;
     margin-left: auto;
     margin-right: auto;
-    overflow-x: hidden;
 
     &::after {
         content: ' ';

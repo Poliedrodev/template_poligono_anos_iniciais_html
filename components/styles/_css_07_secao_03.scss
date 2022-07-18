@@ -1,56 +1,81 @@
 .css_07_secao_03 {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
   width: 100%;
-  background-color: #f5f5f5;
-  position: relative;
-  text-align: center;
-  margin-top: 68px;
-
-  &::after {
-    content: '';
-    height: 100%;
-    width: 68px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-A.svg);
-  }
 
   .css_07_secao_03_text {
     margin: 0;
-    padding: 0;
+    padding: 8;
     font-family: $fontName;
     font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 2rem;
     color: #fff;
+    background-color: $vol2_cor1;
+    width: fit-content;
   }
 
-  &.artes {
-    background-color: $art_cor1;
+  .css_07_secao_03_bg {
+    width: 100%;
+    background-color: $vol2_cor2;
+    position: relative;
+    min-height: 42px;
+
+    &::before {
+      content: '';
+      height: 100%;
+      position: absolute;
+      left: 0;
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-degrade.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
-  &.ciencias {
-    background-color: $cie_cor1;
+  &.vol2 {
+    .css_07_secao_03_text {
+      background-color: $vol2_cor1;
+
+    }
+
+    .css_07_secao_03_bg {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-degrade.svg);
+    }
   }
 
-  &.geografia {
-    background-color: $geo_cor1;
+  &.vol3 {
+    .css_07_secao_03_text {
+      background-color: $vol3_cor1;
+
+    }
+
+    .css_07_secao_03_bg {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL3-degrade.svg);
+    }
   }
 
-  &.historia {
-    background-color: $his_cor1;
+  &.vol4 {
+    .css_07_secao_03_text {
+      background-color: $vol4_cor1;
+
+    }
+
+    .css_07_secao_03_bg {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-degrade.svg);
+    }
   }
 
-  &.lingua_inglesa {
-    background-color: $ing_cor1;
-  }
+  &.vol5 {
+    .css_07_secao_03_text {
+      background-color: $vol5_cor1;
 
-  &.lingua_portuguesa {
-    background-color: $por_cor1;
-  }
+    }
 
-  &.matematica {
-    background-color: $mat_cor1;
+    .css_07_secao_03_bg {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL5-degrade.svg);
+    }
   }
 
 

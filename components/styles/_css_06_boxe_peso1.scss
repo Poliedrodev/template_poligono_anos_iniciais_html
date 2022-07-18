@@ -1,16 +1,16 @@
-.css_06_boxe_peso1 {
+.css_06_boxe_peso2 {
   margin-top: 32px;
 
-  .css_06_boxe_peso1_secao_titulo {
+  .css_06_boxe_peso2_secao_titulo {
     background-color: $apoio_cor1;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
 
-    .css_06_boxe_peso1_titulo {
+    .css_06_boxe_peso2_titulo {
       margin: 0;
       font-family: $fontName;
-      font-size: 34px;
-      font-weight: 800;
+      font-size: 21px;
+      font-weight: 700;
       font-style: normal;
       color: #fff;
       background-color: #f5f5f5;
@@ -21,7 +21,7 @@
 
   }
 
-  .css_06_boxe_peso1_secao {
+  .css_06_boxe_peso2_secao {
     border: solid 4px $apoio_cor1;
     border-radius: 0px 0px 15px 15px;
     min-height: 100px;
@@ -29,50 +29,333 @@
   }
 
   &.artes {
-    .css_06_boxe_peso1_titulo {
-      background-color: $art_cor1;
+    &.modelo_01 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $art_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $art_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $art_cor2;
+        background-color: $art_bg;
+      }
+    }
+
+    &.modelo_02 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $art_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $apoio_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
+    }
+
+    &.modelo_03 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $apoio_cor1;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $art_cor2;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
     }
   }
 
-  &.ciencias {
-    .css_06_boxe_peso1_titulo {
-      background-color: $cie_cor1;
+  &.historia {
+    &.modelo_01 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $his_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $his_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $his_cor2;
+        background-color: $his_bg;
+      }
+    }
+
+    &.modelo_02 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $his_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $apoio_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
+    }
+
+    &.modelo_03 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $apoio_cor1;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $his_cor2;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
     }
   }
 
   &.geografia {
-    .css_06_boxe_peso1_titulo {
-      background-color: $geo_cor1;
+    &.modelo_01 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $geo_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $geo_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $geo_cor2;
+        background-color: $geo_bg;
+      }
+    }
+
+    &.modelo_02 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $geo_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $apoio_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
+    }
+
+    &.modelo_03 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $apoio_cor1;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $geo_cor2;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
     }
   }
 
   &.ciencias {
-    .css_06_boxe_peso1_titulo {
-      background-color: $his_cor1;
+    &.modelo_01 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $cie_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $cie_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $cie_cor2;
+        background-color: $cie_bg;
+      }
+    }
+
+    &.modelo_02 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $cie_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $apoio_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
+    }
+
+    &.modelo_03 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $apoio_cor1;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $cie_cor2;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
     }
   }
 
   &.lingua_portuguesa {
-    .css_06_boxe_peso1_titulo {
-      background-color: $por_cor1;
+    &.modelo_01 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $por_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $por_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $por_cor2;
+        background-color: $por_bg;
+      }
+    }
+
+    &.modelo_02 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $por_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $apoio_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
+    }
+
+    &.modelo_03 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $apoio_cor1;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $por_cor2;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
     }
   }
 
   &.lingua_inglesa {
-    .css_06_boxe_peso1_titulo {
-      background-color: $ing_cor1;
+    &.modelo_01 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $ing_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $ing_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $ing_cor2;
+        background-color: $ing_bg;
+      }
+    }
+
+    &.modelo_02 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $ing_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $apoio_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
+    }
+
+    &.modelo_03 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $apoio_cor1;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $ing_cor2;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
     }
   }
 
   &.matematica {
-    .css_06_boxe_peso1_titulo {
-      background-color: $mat_cor1;
+    &.modelo_01 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $mat_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $mat_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $mat_cor2;
+        background-color: $mat_bg;
+      }
+    }
+
+    &.modelo_02 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $mat_cor2;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $apoio_cor1;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
+    }
+
+    &.modelo_03 {
+      .css_06_boxe_peso2_secao_titulo {
+        background-color: $apoio_cor1;
+
+        .css_06_boxe_peso2_titulo {
+          background-color: $mat_cor2;
+        }
+      }
+
+      .css_06_boxe_peso2_secao {
+        border: solid 4px $apoio_cor1;
+        background-color: $apoio_bg;
+      }
     }
   }
 
-  &.artes {
-    .css_06_boxe_peso1_titulo {
-      background-color: $art_cor1;
-    }
-  }
+
 }

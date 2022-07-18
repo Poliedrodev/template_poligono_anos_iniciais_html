@@ -1,6 +1,98 @@
 .css_06_boxe_titulo1 {
-  font-size: 20px;
-  color: $seg_lin_cor2;
-  font-family: $fontName;
-  margin: 0px;
+  display: flex;
+  align-items: baseline;
+  margin-top: 42px;
+
+  .css_06_boxe_titulo1_titulo {
+    font-family: $fontName;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+
+  }
+
+  .css_06_boxe_titulo1_icon {
+    background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-A.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    margin-left: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 14px;
+      height: 20px;
+      background-color: $vol2_cor3;
+      left: 0;
+      top: -20px;
+      position: absolute;
+    }
+  }
+
+  /* Variações de cores */
+  &.vol2 {
+    .css_06_boxe_titulo1_titulo {
+      color: $vol2_cor1;
+    }
+
+    .css_06_boxe_titulo1_icon {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL2-A.svg);
+
+      &::after {
+        background-color: $vol2_cor2;
+      }
+    }
+  }
+
+  &.vol3 {
+    .css_06_boxe_titulo1_titulo {
+      color: $vol3_cor1;
+
+      .css_06_boxe_titulo1_icon {
+        background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL3-A.svg);
+
+        &::after {
+          background-color: $vol3_cor2;
+        }
+      }
+    }
+  }
+
+  &.vol4 {
+    .css_06_boxe_titulo1_titulo {
+      color: $vol4_cor1;
+    }
+
+    .css_06_boxe_titulo1_icon {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL4-A.svg);
+
+      &::after {
+        background-color: $vol4_cor2;
+      }
+    }
+  }
+
+  &.vol5 {
+    .css_06_boxe_titulo1_titulo {
+      color: $vol5_cor1;
+    }
+
+    .css_06_boxe_titulo1_icon {
+      background-image: url(https://livro-digital.p4ed.com/assets/icons/poligono/VOL5-A.svg);
+
+      &::after {
+        background-color: $vol5_cor2;
+      }
+    }
+  }
+
+
+
 }
